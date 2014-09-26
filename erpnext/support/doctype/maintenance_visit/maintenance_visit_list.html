@@ -17,13 +17,13 @@
 			<span class="label
 				label-{%= style %} filterable"
 				data-filter="maintenance_type,=,{%= doc.maintenance_type %}">
-				{%= doc.maintenance_type %}
+				{%= __(doc.maintenance_type) %}
 			</span>
 			{% var style = doc.completion_status==="Partially Completed" ? "warning" : "success" %}
 			<span class="label
 				label-{%= style %} filterable"
 				data-filter="completion_status,=,{%= doc.completion_status %}">
-				{%= doc.completion_status %}
+				{%= __(doc.completion_status) %}
 			</span>
 		</div>
 	</div>

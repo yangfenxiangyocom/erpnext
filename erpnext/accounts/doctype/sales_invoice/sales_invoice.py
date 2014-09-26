@@ -3,6 +3,7 @@
 
 from __future__ import unicode_literals
 import frappe
+from frappe import throw, _, msgprint
 import frappe.defaults
 
 from frappe.utils import add_days, cint, cstr, date_diff, flt, getdate, nowdate, \
@@ -326,7 +327,7 @@ class SalesInvoice(SellingController):
 
 
 	def add_remarks(self):
-		if not self.remarks: self.remarks = 'No Remarks'
+		if not self.remarks: self.remarks = _('No Remarks')
 
 
 	def so_dn_required(self):
@@ -337,7 +338,7 @@ class SalesInvoice(SellingController):
 				for d in self.get('entries'):
 					if frappe.db.get_value('Item', d.item_code, 'is_stock_item') == 'Yes' \
 						and not d.get(i.lower().replace(' ','_')):
-						msgprint(_("{0} is mandatory for Item {1}").format(i,d.item_code), raise_exception=1)
+						msgprint(_("{0} is mandatory for Item {1}").format(_(i),d.item_code), raise_exception=1)
 
 
 	def validate_proj_cust(self):

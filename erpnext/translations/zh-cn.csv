@@ -2698,7 +2698,7 @@ Service Tax,服务税
 Services,服务
 Set,设置
 "Set Default Values like Company, Currency, Current Fiscal Year, etc.",设置默认值，像公司、货币、当前财年等。
-Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.,Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.
+Set Item Group-wise budgets on this Territory. You can also include seasonality by setting the Distribution.,设置商品组的销售区域.你也可以设置季度预算分配
 Set Status as Available,设置状态为可用
 Set as Default,设置为默认
 Set as Lost,设置为丢失
@@ -3567,3 +3567,19 @@ Re-Open Ticket,重新打开
 "<li>To send an alert if a particular value changes, select ""Value Change""</li>",<li>如果要在某个值改变时发送警报则请选择“值改变”</li>
 Search Item,搜索商品
 Barcode / Serial No,条码/编号
+<b>No employee for the above selected criteria OR salary slip already created</b>,<b>没有员工符合以上条件或相应员工的工资条已经创建</b>
+"<div class=""alert alert-info"">You can generate multiple salary slips based on the selected criteria, submit and mail those to the employee directly from here</div>","<div class=""alert alert-info"">你可以根据选择的条件工资条，生成后点击提交存入系统并邮件通知相应员工</div>"
+<b>Created Salary Slip has been created: </b>,<b>工资条已创建: </b>
+"Download the Template, fill appropriate data and attach the modified file.All dates and employee combination in the selected period will come in the template, with existing attendance records","下载模板，填写员工及相应日期的出勤记录并附上修改后的文件"
+{0} ({1}) must have role 'Expense Approver',{0} ({1})必须有 '费用审批'的角色
+{0} ({1}) must have role 'Leave Approver',{0} ({1}) 必须有'休假审批'的角色
+<em>Addresses will appear only when you save the lead</em>,地址将在信息保存后出现
+[Preferred for Billing],[首选账单地址]
+[Preferred for Shipping],[首选送货地址]
+Tel,电话
+delete this,删除
+Landed Cost Voucher Amount,到岸成本凭证金额
+"Select ""Yes"" for sub - contracting items","如果是分包项目请选择是"
+Warehouse where you are maintaining stock of rejected items,被拒绝收货的商品存放的仓库
+Total Variable Cost,总可变成本
+Total Fixed Cost,总固定成本

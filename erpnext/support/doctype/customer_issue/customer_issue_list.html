@@ -10,7 +10,7 @@
 			<span class="label
 				label-{%= frappe.utils.guess_style(doc.status) %} filterable"
 				data-filter="status,=,{%= doc.status %}">
-				{%= doc.status %}
+				{%= __(doc.status) %}
 			</span>
 
 			{% if(doc.item_code) { %}

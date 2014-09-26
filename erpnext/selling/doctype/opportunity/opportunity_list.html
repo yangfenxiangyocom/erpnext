@@ -5,7 +5,7 @@
 			<span style="margin-right: 8px; display: inline-block">
 				<span class="filterable"
 					data-filter="{%= doc.enquiry_from.toLowerCase() %},=,{%= doc[doc.enquiry_from.toLowerCase()] %}">
-					{%= doc.customer_name %}</span> ({%= doc.enquiry_from %})</span>
+					{%= doc.customer_name %}</span> ({%=  __(doc.enquiry_from) %})</span>
 			<span style="margin-right: 8px; display: inline-block"
 				title="{%= doc.enquiry_type %}" class="filterable"
 				data-filter="enquiry_type,=,{%= doc.enquiry_type %}">
@@ -17,7 +17,7 @@
 			</span>
 			<span class="label
 				{%= doc.status=="Draft" ? "label-danger" : "label-info" %} filterable"
-				data-filter="status,=,{%= doc.status %}">{%= doc.status %}</span>
+				data-filter="status,=,{%= doc.status %}">{%= __(doc.status)  %}</span>
 		</div>
 	</div>
 </div>

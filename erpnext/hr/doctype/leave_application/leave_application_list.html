@@ -15,13 +15,13 @@
 				label-{%= frappe.utils.guess_style(doc.status) %} filterable"
 				title="{%= __("Status") %}"
 				data-filter="status,=,{%= doc.status %}">
-				{%= doc.status %}
+				{%= __(doc.status) %}
 			</span>
 
 			<span class="label label-default filterable"
 				title="{%= __("Leave Type") %}"
 				data-filter="leave_type,=,{%= doc.leave_type %}">
-				{%= doc.leave_type %}
+				{%= __(doc.leave_type) %}
 			</span>
 		</div>
 	</div>

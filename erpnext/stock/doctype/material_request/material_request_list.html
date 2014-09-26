@@ -13,7 +13,7 @@
 			</span>
 			{% if(doc.status=="Draft") { %}
 			<span class="label label-danger"
-				data-filter="status,=,{%= doc.status %}">{%= doc.status %}</span>
+				data-filter="status,=,{%= doc.status %}">{%= __(doc.status) %}</span>
 			{% } %}
 			{% if(doc.status=="Submitted" && doc.per_ordered < 100) { %}
 			<span class="label label-warning filterable"

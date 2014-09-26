@@ -6,7 +6,7 @@
 				{%= doc.company_name %}</span>
 			<span class="label
 				{%= doc.status=="Open" ? "label-danger" : "label-info" %} filterable"
-				data-filter="status,=,{%= doc.status %}">{%= doc.status %}</span>
+				data-filter="status,=,{%= doc.status %}">{%=  __(doc.status) %}</span>
 			{% if(doc.territory) { %}
 			<span class="label label-default filterable"
 				data-filter="territory,=,{%= doc.territory %}">

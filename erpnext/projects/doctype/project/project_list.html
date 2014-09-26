@@ -4,11 +4,11 @@
 			{%= list.get_avatar_and_id(doc) %}
 			<span class="label label-{%= frappe.utils.guess_style(doc.status) %} filterable"
 				data-filter="status,=,{%= doc.status %}">
-				{%= doc.status %}
+				{%= __(doc.status) %}
 			</span>
 			<span class="label label-{%= frappe.utils.guess_style(doc.priority) %} filterable"
 				data-filter="priority,=,{%= doc.priority %}">
-				{%= doc.priority %}
+				{%= __(doc.priority) %}
 			</span>
 			{% if(doc.status==="Open" && doc.completion_date
 				&& frappe.datetime.get_diff(doc.completion_date) <= 0) { %}

@@ -44,7 +44,7 @@ $.extend(erpnext, {
 		if(!grid_row.fields_dict.serial_no ||
 			grid_row.fields_dict.serial_no.get_status()!=="Write") return;
 
-		var $btn = $('<button class="btn btn-sm btn-default">'+__("Add Serial No")+'</button>')
+		var $btn = $('<button class="btn btn-sm btn-default">'+ __("Add Serial No") +'</button>')
 			.appendTo($("<div>")
 				.css({"margin-bottom": "10px", "margin-left": "15px"})
 				.appendTo(grid_row.fields_dict.serial_no.$wrapper));
@@ -64,6 +64,7 @@ $.extend(erpnext, {
 					},
 					{
 						"fieldtype": "Button",
+						"fieldname": "add",
 						"label": __("Add")
 					}
 				]

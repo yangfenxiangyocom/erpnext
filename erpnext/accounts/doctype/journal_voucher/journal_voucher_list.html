@@ -6,7 +6,7 @@
 				{%= doc.get_formatted("posting_date") %}</span>
 			<span class="label label-info filterable"
 				data-filter="voucher_type,=,{%= doc.voucher_type %}">
-					{%= doc.voucher_type %}
+					{%= __(doc.voucher_type) %}
 			</span>
 			{% if(doc.docstatus===0) { %}
 				<span class="label label-danger filterable"

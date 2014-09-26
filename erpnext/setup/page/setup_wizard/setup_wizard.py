@@ -239,10 +239,10 @@ def create_email_digest():
 
 	companies = frappe.db.sql_list("select name FROM `tabCompany`")
 	for company in companies:
-		if not frappe.db.exists("Email Digest", "Default Weekly Digest - " + company):
+		if not frappe.db.exists("Email Digest", _("Default Weekly Digest" + "  " + company):
 			edigest = frappe.get_doc({
 				"doctype": "Email Digest",
-				"name": "Default Weekly Digest - " + company,
+				"name": _("Default Weekly Digest") + "  " + company,
 				"company": company,
 				"frequency": "Weekly",
 				"recipient_list": "\n".join(system_managers)
@@ -258,7 +258,7 @@ def create_email_digest():
 	if companies:
 		edigest = frappe.new_doc("Email Digest")
 		edigest.update({
-			"name": "Scheduler Errors",
+			"name": _("Scheduler Errors"),
 			"company": companies[0],
 			"frequency": "Daily",
 			"recipient_list": "\n".join(system_managers),
