@@ -15,7 +15,7 @@ cur_frm.cscript.render_contact_row = function(wrapper, data) {
 	// prepare data
 	data.fullname = (data.first_name || '')
 		+ (data.last_name ? ' ' + data.last_name : '');
-	data.primary = data.is_primary_contact ? __(' [Primary]' ): '';
+	data.primary = data.is_primary_contact ? __('[Primary]'): '';
 
 	// prepare description
 	var description = [];
@@ -42,8 +42,8 @@ cur_frm.cscript.render_address_row = function(wrapper, data) {
 	// prepare data
 	data.fullname = data.address_type;
 	data.primary = '';
-	if (data.is_primary_address) data.primary += __(' [Preferred for Billing]');
-	if (data.is_shipping_address) data.primary += __(' [Preferred for Shipping]');
+	if (data.is_primary_address) data.primary += __('[Preferred for Billing]');
+	if (data.is_shipping_address) data.primary += __('[Preferred for Shipping]');
 
 	// prepare address
 	var address = [];
@@ -85,6 +85,9 @@ cur_frm.cscript.render_row_in_wrapper = function(wrapper, data, doctype) {
 	var $wrapper = $(wrapper);
 
 	data.doctype = doctype.toLowerCase();
+
+	//TMP fix, let it read Billing's translation
+	var tt = __("Billing");
 	data.fullname = __(data.fullname);
 
 	$wrapper.append(repl("\
