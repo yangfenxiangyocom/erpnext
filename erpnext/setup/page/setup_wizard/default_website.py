@@ -25,7 +25,7 @@ class website_maker(object):
 			"title": self.company,
 			"published": 1,
 			"header": "<h1>{0}</h1>".format(self.tagline or "Headline")+\
-				'<p>'+_("This is an example website auto-generated from ERPNext")+"</p>"+\
+				'<p>'+_("This is an example website auto-generated from ERP Boost")+"</p>"+\
 				'<p><a class="btn btn-primary" href="/login">Login</a></p>',
 			"description": self.company + ":" + (self.tagline or ""),
 			"css": frappe.get_template("setup/page/setup_wizard/sample_home_page.css").render(),
@@ -49,12 +49,12 @@ class website_maker(object):
 		website_settings.top_bar_items = []
 		website_settings.append("top_bar_items", {
 			"doctype": "Top Bar Item",
-			"label":"Contact",
+			"label":_("Contact"),
 			"url": "contact"
 		})
 		website_settings.append("top_bar_items", {
 			"doctype": "Top Bar Item",
-			"label":"Blog",
+			"label":_("Blog"),
 			"url": "blog"
 		})
 		website_settings.append("top_bar_items", {

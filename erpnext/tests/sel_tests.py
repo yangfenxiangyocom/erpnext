@@ -37,7 +37,7 @@ def run():
 
 	sel.set_field("first_name", "Test")
 	sel.set_field("last_name", "User")
-	sel.set_field("email", "test@erpnext.com")
+	sel.set_field("email", "test@erpboost.com")
 	sel.set_field("password", "test")
 
 	next_slide("1")
