@@ -15,7 +15,7 @@
 			<span class="label {%= icon[1] %} filterable"
 				data-filter="status,=,{%= doc.status %}"
 				title="{%= doc.purpose %}">
-				<i class="{%= icon[0] %}"></i> {%= doc.status %}
+				<i class="{%= icon[0] %}"></i> {%= __(doc.status) %}
 			</span>
 			{% if(doc.warehouse) { %}
 				<span class="label label-default filterable"

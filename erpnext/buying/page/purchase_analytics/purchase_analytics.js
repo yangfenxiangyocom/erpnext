@@ -78,7 +78,7 @@ erpnext.PurchaseAnalytics = frappe.views.TreeGridReport.extend({
 				formatter: this.check_formatter},
 			{id: "name", name: this.tree_grid.label, field: "name", width: 300,
 				formatter: this.tree_formatter},
-			{id: "total", name: "Total", field: "total", plot: false,
+			{id: "total", name: __("Total"), field: "total", plot: false,
 				formatter: this.currency_formatter}
 		];
 
@@ -94,11 +94,10 @@ erpnext.PurchaseAnalytics = frappe.views.TreeGridReport.extend({
 		{fieldtype:"Select", label: __("Based On"), fieldname: "based_on",
 			options:["Purchase Invoice", "Purchase Order", "Purchase Receipt"]},
 		{fieldtype:"Select", label: __("Value or Qty"), fieldname: "value_or_qty",
-			options:["Value", "Quantity"]},
+			options:[{value:"Value",label:__("Value")},{value:"Quantity",label:__("Quantity")}]},
 		{fieldtype:"Select", label: __("Company"), link:"Company", fieldname: "company",
 			default_value: __("Select Company...")},
 		{fieldtype:"Date", label: __("From Date"), fieldname: "from_date"},
-		{fieldtype:"Label", label: __("To")},
 		{fieldtype:"Date", label: __("To Date"), fieldname: "to_date"},
 		{fieldtype:"Select", label: __("Range"), fieldname: "range",
 			options:[{label: __("Daily"), value: "Daily"}, {label: __("Weekly"), value: "Weekly"},

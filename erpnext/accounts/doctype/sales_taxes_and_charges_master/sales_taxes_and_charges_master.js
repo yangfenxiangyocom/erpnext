@@ -9,7 +9,7 @@ cur_frm.cscript.onload = function(doc, cdt, cdn) {
 }
 
 cur_frm.cscript.refresh = function(doc, cdt, cdn) {
-	cur_frm.set_footnote(frappe.markdown(cur_frm.meta.description));
+	cur_frm.set_footnote(frappe.markdown(__(cur_frm.meta.description)));
 }
 
 // For customizing print

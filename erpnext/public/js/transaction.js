@@ -564,7 +564,7 @@ erpnext.TransactionController = erpnext.stock.StockController.extend({
 			if(frappe.meta.has_field(me.frm.doc.doctype, fieldname)) {
 				if (!me.frm.doc[fieldname]) {
 					msgprint(__("Please specify") + ": " +
-						frappe.meta.get_label(me.frm.doc.doctype, fieldname, me.frm.doc.name) +
+						__(frappe.meta.get_label(me.frm.doc.doctype, fieldname, me.frm.doc.name) )+
 						". " + __("It is needed to fetch Item Details."));
 						valid = false;
 				}

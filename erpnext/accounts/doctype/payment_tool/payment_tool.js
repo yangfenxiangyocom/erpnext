@@ -212,6 +212,6 @@ erpnext.payment_tool.check_mandatory_to_fetch = function(doc) {
 	];
 
 	$.each(check_fields, function(i, v) {
-		if(!v[1]) frappe.throw(__("Please select {0} first", [v[0]]));
+		if(!v[1]) frappe.throw(__("Please select {0} first", [__(v[0])]));
 	});
 }

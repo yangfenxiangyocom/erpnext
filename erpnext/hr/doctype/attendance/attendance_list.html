@@ -7,7 +7,7 @@
 				label-{%= {"Present":"success", "Absent":"default", "Half Day": "warning"}[doc.status] %} filterable"
 				title="{%= __("Status") %}"
 				data-filter="status,=,{%= doc.status %}">
-				{%= doc.status %}
+				{%= __(doc.status) %}
 			</span>
 		</div>
 	</div>

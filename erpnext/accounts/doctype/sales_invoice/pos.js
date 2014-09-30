@@ -161,7 +161,7 @@ erpnext.POS = Class.extend({
 				"options": this.party,
 				"label": this.party,
 				"fieldname": "pos_party",
-				"placeholder": this.party
+				"placeholder": __(this.party)
 			},
 			parent: this.wrapper.find(".party-area"),
 			only_input: true,
@@ -180,7 +180,7 @@ erpnext.POS = Class.extend({
 				"fieldtype": "Data",
 				"label": "Barcode",
 				"fieldname": "pos_barcode",
-				"placeholder": "Barcode / Serial No"
+				"placeholder": __("Barcode / Serial No")
 			},
 			parent: this.wrapper.find(".barcode-area"),
 			only_input: true,
@@ -199,7 +199,7 @@ erpnext.POS = Class.extend({
 				"fieldtype": "Data",
 				"label": "Item",
 				"fieldname": "pos_item",
-				"placeholder": "Search Item"
+				"placeholder": __("Search Item")
 			},
 			parent: this.wrapper.find(".search-area"),
 			only_input: true,
@@ -220,7 +220,7 @@ erpnext.POS = Class.extend({
 				"options": "Item Group",
 				"label": "Item Group",
 				"fieldname": "pos_item_group",
-				"placeholder": "Item Group"
+				"placeholder": __("Item Group")
 			},
 			parent: this.wrapper.find(".item-group-area"),
 			only_input: true,
@@ -274,7 +274,7 @@ erpnext.POS = Class.extend({
 						if(!me.frm.doc[me.party.toLowerCase()] && ((me.frm.doctype == "Quotation" &&
 								me.frm.doc.quotation_to == "Customer")
 								|| me.frm.doctype != "Quotation")) {
-							msgprint(__("Please select {0} first.", [me.party]));
+							msgprint(__("Please select {0} first.", [__(me.party)]));
 							return;
 						}
 						else

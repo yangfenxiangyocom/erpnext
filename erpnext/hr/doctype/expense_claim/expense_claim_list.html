@@ -11,7 +11,7 @@
 				label-{%= frappe.utils.guess_style(doc.approval_status) %} filterable"
 				title="{%= __("Status") %}"
 				data-filter="status,=,{%= doc.approval_status %}">
-				{%= doc.approval_status %}
+				{%= __(doc.approval_status) %}
 			</span>
 
 		</div>
