@@ -115,7 +115,7 @@ erpnext.AccountsChart = Class.extend({
 			toolbar: [
 				{ toggle_btn: true },
 				{
-					label: __("Open"),
+					label: __("Open It"),
 					condition: function(node) { return !node.root },
 					click: function(node, btn) {
 						 frappe.set_route("Form", me.ctype, node.label);
