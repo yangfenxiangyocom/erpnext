@@ -5,13 +5,13 @@
  "doctype": "Report",
  "idx": 1,
  "is_standard": "Yes",
- "modified": "2014-07-14 07:18:17.006732",
+ "modified": "2014-10-09 10:18:17.006732",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Customer Addresses and Contacts",
  "owner": "Administrator",
- "query": "SELECT\n\t`tabCustomer`.name as customer_id,\n\t`tabCustomer`.customer_name,\n\t`tabCustomer`.customer_group,\n\t`tabAddress`.address_line1,\n\t`tabAddress`.address_line2,\n\t`tabAddress`.city,\n\t`tabAddress`.state,\n\t`tabAddress`.pincode,\n\t`tabAddress`.country,\n\t`tabAddress`.is_primary_address, \n\t`tabContact`.first_name,\n\t`tabContact`.last_name,\n\t`tabContact`.phone,\n\t`tabContact`.mobile_no,\n\t`tabContact`.email_id,\n\t`tabContact`.is_primary_contact\nFROM\n\t`tabCustomer`\n\tleft join `tabAddress` on (\n\t\t`tabAddress`.customer=`tabCustomer`.name\n\t)\n\tleft join `tabContact` on (\n\t\t`tabContact`.customer=`tabCustomer`.name\n\t)\nWHERE\n\t`tabCustomer`.docstatus<2\nORDER BY\n\t`tabCustomer`.name asc",
+ "query": "SELECT\n\t`tabCustomer`.name as \"ID::\",\n\t`tabCustomer`.customer_name as \"Name::\",\n\t`tabCustomer`.customer_group  as \"Customer Group::\",\n\t`tabAddress`.address_line1  as \"Address Line 1::\",\n\t`tabAddress`.address_line2  as \"Address Line 2::\",\n\t`tabAddress`.city  as \"City::\",\n\t`tabAddress`.state  as \"State::\",\n\t`tabAddress`.pincode  as \"Pincode::\",\n\t`tabAddress`.country  as \"Country::\",\n\t`tabAddress`.is_primary_address   as \"Primary::\", \n\t`tabContact`.first_name  as \"First Name::\",\n\t`tabContact`.last_name \"Last Name::\",\n\t`tabContact`.phone \"Phone::\",\n\t`tabContact`.mobile_no \"Mobile No::\",\n\t`tabContact`.email_id \"Email::\",\n\t`tabContact`.is_primary_contact \"Is Primary Contact::\" \nFROM\n\t`tabCustomer`\n\tleft join `tabAddress` on (\n\t\t`tabAddress`.customer=`tabCustomer`.name\n\t)\n\tleft join `tabContact` on (\n\t\t`tabContact`.customer=`tabCustomer`.name\n\t)\nWHERE\n\t`tabCustomer`.docstatus<2\nORDER BY\n\t`tabCustomer`.name asc",
  "ref_doctype": "Customer",
- "report_name": "Customer Addresses And Contacts",
+ "report_name": "Customer Addresses and Contacts",
  "report_type": "Query Report"
 }

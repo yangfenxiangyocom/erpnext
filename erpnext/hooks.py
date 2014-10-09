@@ -1,12 +1,13 @@
+# coding=utf-8
 app_name = "erpnext"
-app_title = "ERPNext"
-app_publisher = "Web Notes Technologies Pvt. Ltd. and Contributors"
-app_description = "Open Source Enterprise Resource Planning for Small and Midsized Organizations"
+app_title = "ERP Boost"
+app_publisher = "ERP Boost Your Business"
+app_description = "企业资源管理计划工具"
 app_icon = "icon-th"
 app_color = "#e74c3c"
-app_version = "4.4.1"
+app_version = "4.5.2"
 
-error_report_email = "support@erpnext.com"
+error_report_email = "support@erpboost.com"
 
 app_include_js = "assets/js/erpnext.min.js"
 app_include_css = "assets/css/erpnext.css"

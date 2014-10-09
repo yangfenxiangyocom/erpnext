@@ -189,7 +189,7 @@ Ageing Based On,账龄日期基于
 Ageing Date is mandatory for opening entry,期初分录的账龄日期是必须的
 Ageing date is mandatory for opening entry,期初分录的账龄日期是必须的
 Agent,代理
-Aging Date,时效日期
+Aging Date,发票日期
 Aging Date is mandatory for opening entry,期初分录的账龄日期是必须的
 Agriculture,农业
 Airline,航空公司
@@ -539,14 +539,14 @@ Clearance date cannot be before check date in row {0},第{0}行的清除日期�
 Click on 'Make Sales Invoice' button to create a new Sales Invoice.,单击'创建销售发票'按钮来创建一个新的销售发票
 Click on a link to get options to expand get options ,点击链接来得到选项或展开来得到更多选项
 Client,客户端
-Close Balance Sheet and book Profit or Loss.,关闭资产负债表和账面利润或亏损
+Close Balance Sheet and book Profit or Loss.,关闭资产负债表并记录损益
 Closed,已关闭
 Closing (Cr),关闭（Cr）
 Closing (Dr),关闭（Dr）
-Closing Account Head,期末账户
+Closing Account Head,关闭分类帐
 Closing Account {0} must be of type 'Liability',决算账户{0}类型必须是'债务'
 Closing Date,截止日期
-Closing Fiscal Year,截止会计年度
+Closing Fiscal Year,关闭财年
 Closing Qty,期末库存
 Closing Value,收盘值
 CoA Help,COA帮助
@@ -620,7 +620,7 @@ Contact master.,联系负责人
 Contacts,联系人
 Content,内容
 Content Type,内容类型
-Contra Voucher,Contra Voucher
+Contra Voucher,银行间转账凭证
 Contract,合同
 Contract End Date,合同结束日期
 Contract End Date must be greater than Date of Joining,合同结束日期必须大于创建的日期
@@ -1151,7 +1151,7 @@ GL Entry,GL Entry
 Gantt Chart,甘特图
 Gantt chart of all tasks.,所有任务的甘特图
 Gender,性别
-General,General
+General,一般性
 General Ledger,总帐
 Generate Description HTML,生成HTML描述
 Generate Material Requests (MRP) and Production Orders.,生成物料请求(MRP)和生产订单
@@ -1246,7 +1246,7 @@ How frequently?,多久？
 "How should this currency be formatted? If not set, will use system defaults",货币进行格式化？如果没有设置，将使用系统默认
 Human Resources,人力资源
 Identification of the package for the delivery (for print),交付包的识别编号(用于打印)
-If Income or Expense,如果收入或支出
+If Income or Expense,收入或支出
 If Monthly Budget Exceeded,如果每月超出预算
 "If Sale BOM is defined, the actual BOM of the Pack is displayed as table. Available in Delivery Note and Sales Order",如果定义了销售物料清单(BOM)，那么该包的实际物料清单(BOM)显示为表格并且发货单和销售订单上可见
 "If Supplier Part Number exists for given Item, it gets stored here",如果供应商料号存在则它被保存在这里
@@ -1299,7 +1299,7 @@ In Words will be visible once you save the Quotation.,保存报价单后如果�
 In Words will be visible once you save the Sales Invoice.,你保存销售发票后如果在的话将可见
 In Words will be visible once you save the Sales Order.,保存销售订单后如果在的话将可见
 Incentives,奖励
-Include Reconciled Entries,包括对账项目
+Include Reconciled Entries,包括已对账条目
 Include holidays in Total no. of Working Days,工作日包括节假日的总数
 Income,收入
 Income / Expense,收入/支出
@@ -1360,7 +1360,7 @@ Invoice Type,发票类型
 Invoice/Journal Voucher Details,发票/记帐凭证详细信息
 Invoiced Amount (Exculsive Tax),发票金额(不包括税金)
 Is Active,是否激活
-Is Advance,是预付的
+Is Advance,是预付款
 Is Cancelled,是取消了
 Is Carry Forward,是可累计假期
 Is Default,是默认的
@@ -1488,7 +1488,7 @@ Job Title,职位
 "Job profile, qualifications required etc.",工作概要、资格要求等
 Jobs Email Settings,工作申请Email设置
 Journal Entries,日记帐分录
-Journal Entry,会计分录
+Journal Entry,日记帐分录
 Journal Voucher,记帐凭证
 Journal Voucher Detail,日记帐凭证明细
 Journal Voucher Detail No,日记帐凭证明细号
@@ -1611,7 +1611,7 @@ Make Accounting Entry For Every Stock Movement,每次库存转移都进行财务
 Make Bank Voucher,创建银行凭证
 Make Credit Note,创建贷方凭证(应付款通知单)
 Make Debit Note,创建借记通知单
-Make Delivery,交货
+Make Delivery,创建发货单
 Make Difference Entry,创建差异记录
 Make Excise Invoice,创建消费税发票
 Make Installation Note,创建安装注意事项
@@ -1661,7 +1661,7 @@ Master Name,基础数据名称
 Master Name is mandatory if account type is Warehouse,如果帐户类型为仓库则基础数据名称是强制性的
 Master Type,基础数据类型
 Masters,基础数据
-Match non-linked Invoices and Payments.,匹配非联的发票和付款
+Match non-linked Invoices and Payments.,匹配无关联的发票和付款
 Material Issue,物料发放
 Material Receipt,物料收入
 Material Request,物料需求
@@ -1876,7 +1876,7 @@ Open Tickets,未关闭的客户咨询
 Opening (Cr),开放(CR)
 Opening (Dr),开放(Dr)
 Opening Date,开放日期
-Opening Entry,Opening Entry
+Opening Entry,期初分类
 Opening Qty,初始数量
 Opening Time,开放时间
 Opening Value,期初价值
@@ -1976,7 +1976,7 @@ Partner Target Detail,合作伙伴目标
 Partner Type,合作伙伴类型
 Partner's Website,合作伙伴的网站
 Party,Party
-Party Account,被记帐人
+Party Account,目标账户
 Party Type,Party Type
 Party Type Name,Party Type Name
 Passive,被动的
@@ -1989,7 +1989,7 @@ Payables Group,应付账款组
 Payment Days,付款天数
 Payment Due Date,付款到期日
 Payment Period Based On Invoice Date,基于发票日期的付款日
-Payment Reconciliation,付款盘点
+Payment Reconciliation,付款对账
 Payment Reconciliation Invoice,付款发票对账
 Payment Reconciliation Invoices,付款发票对账
 Payment Reconciliation Payment,Payment Reconciliation Payment
@@ -2016,7 +2016,7 @@ Percentage variation in quantity to be allowed while receiving or delivering thi
 Percentage you are allowed to receive or deliver more against the quantity ordered. For example: If you have ordered 100 units. and your Allowance is 10% then you are allowed to receive 110 units.,在收货或发货时，商品实际收发数量大于订单中该商品数量的百分比。例如：订单中某商品订购量为100件，“允许百分比”设置为10，则该商品实际收发数量最大值为110件。
 Performance appraisal.,绩效考核
 Period,期间
-Period Closing Voucher,期末结账凭证
+Period Closing Voucher,期末结转凭证
 Periodicity,周期性
 Permanent Address,永久地址
 Permanent Address Is,永久地址类型
@@ -2339,7 +2339,7 @@ Rate at which Price list currency is converted to company's base currency,价目
 Rate at which Price list currency is converted to customer's base currency,价目表货币转换为客户公司货币的比率
 Rate at which customer's currency is converted to company's base currency,客户公司货币转换为本公司货币的比率
 Rate at which supplier's currency is converted to company's base currency,供应商公司货币转换为本公司货币的比率
-Rate at which this tax is applied,Rate at which this tax is applied
+Rate at which this tax is applied,基于价格应用的税款
 Raw Material,原料
 Raw Material Item Code,原料产品编号
 Raw Materials Supplied,原料供应
@@ -2413,8 +2413,8 @@ Relation,关系
 Relieving Date,解约日期
 Relieving Date must be greater than Date of Joining,解除日期必须大于加入的日期
 Remark,备注
-Remarks,备注
-Remarks Custom,自定义备注
+Remarks,摘要
+Remarks Custom,自定义摘要
 Rename,重命名
 Rename Log,重命名日志
 Rename Tool,重命名工具
@@ -2580,9 +2580,9 @@ Sales Person Targets,销售人员目标
 Sales Person-wise Transaction Summary,销售人员业绩汇总
 Sales Register,销售登记
 Sales Return,销售退回
-Sales Returned,Sales Returned
+Sales Returned,销售已退回
 Sales Taxes and Charges,销售税和费用
-Sales Taxes and Charges Master,销售税和附加费主数据
+Sales Taxes and Charges Master,销售税和附加费基础数据
 Sales Team,销售团队
 Sales Team Details,销售团队详细
 Sales Team1,销售团队1
@@ -2958,7 +2958,7 @@ The BOM which will be replaced,该物料清单将被替换
 The First User: You,您是第一个用户
 "The Item that represents the Package. This Item must have ""Is Stock Item"" as ""No"" and ""Is Sales Item"" as ""Yes""",此产品是一个套餐，包含若干实体产品或服务，它必须设置为非库存项目并且是可销售的状态。
 The Organization,本组织
-"The account head under Liability, in which Profit/Loss will be booked",负债下的户头损益将被Booked
+"The account head under Liability, in which Profit/Loss will be booked",负债下的账户，损益将被锁定
 "The date on which next invoice will be generated. It is generated on submit.
 ","发票的生成日期是在提交时生成的
 "
@@ -3088,7 +3088,7 @@ Track Leads by Industry Type.,通过行业类型跟踪潜在客户。
 Track this Delivery Note against any Project,跟踪此发货单所有相关的项目
 Track this Sales Order against any Project,用项目来跟进此销售订单相关任务
 Transaction,交易
-Transaction Date,交易日期
+Transaction Date,事务日期
 Transaction not allowed against stopped Production Order {0},交易不允许发生在停止的生产订单中 {0}
 Transfer,转移
 Transfer Material,转移材料
@@ -3143,8 +3143,8 @@ Update Landed Cost,更新到岸成本
 Update Series,更新序列号
 Update Series Number,更新序列号
 Update Stock,更新库存
-Update bank payment dates with journals.,银行付款与凭证核对
-Update clearance date of Journal Entries marked as 'Bank Vouchers',更新分类账为“银行凭证”的结算日期
+Update bank payment dates with journals.,更新银行付款日期与日记账
+Update clearance date of Journal Entries marked as 'Bank Vouchers',更新日记账分录的清算日期并标记为“银行凭证”
 Updated,更新
 Updated Birthday Reminders,更新生日提醒
 Upload Attendance,上传考勤
@@ -3586,7 +3586,7 @@ Total Variable Cost,总可变成本
 Total Fixed Cost,总固定成本
 {0} Serial Numbers required for Item {1}. Only {2} provided., 商品 {1}需要{0}个序列号. 仅提供了{2}个.
 Rate ,价格
-"Standard tax template that can be applied to all Sales Transactions. This template can contain list of tax heads and also other expense / income heads like ""Shipping"", ""Insurance"", ""Handling"" etc.<br><br>#### Note<br><br>The tax rate you define here will be the standard tax rate for all **Items**. If there are **Items** that have different rates, they must be added in the **Item Tax** table in the **Item** master.<br><br>#### Description of Columns<br><br>1. Calculation Type: <br>    - This can be on **Net Total** (that is the sum of basic amount).<br>    - **On Previous Row Total / Amount** (for cumulative taxes or charges). If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total.<br>    - **Actual** (as mentioned).<br>2. Account Head: The Account ledger under which this tax will be booked<br>3. Cost Center: If the tax / charge is an income (like shipping) or expense it needs to be booked against a Cost Center.<br>4. Description: Description of the tax (that will be printed in invoices / quotes).<br>5. Rate: Tax rate.<br>6. Amount: Tax amount.<br>7. Total: Cumulative total to this point.<br>8. Enter Row: If based on ""Previous Row Total"" you can select the row number which will be taken as a base for this calculation (default is the previous row).<br>9. Is this Tax included in Basic Rate?: If you check this, it means that this tax will not be shown below the item table, but will be included in the Basic Rate in your main item table. This is useful where you want give a flat price (inclusive of all taxes) price to customers.","税务模板可以应用到销售交易中.这个模板能够包含基本的税以及其它开销例如运输费, 保险费, 处理费等等.<br><br>#### 请注意<br><br>在这定义的标准税务模板会应用到所有的商品. 如果商品不同的税种, 那么必须在商品主数据里的税表进行定义.<br><br>#### 税表的列的描述<br><br>1. 计算类型: <br>    -基于交易总金额 (商品销售金额).<br>    - **基于前一行的总值或金额** (针对的是累加税或费用). 如果选择这个选项, 税会应用在税表此输入行的上一行的值上.<br>    - **实际的** (如以前描述过的. 例如运输费).<br>2. 户头: 会在那个账户下记录账目以及税务<br>3. 成本中心: 如果税或者费用是收入或者是支出则其要记录在成本中心下面.<br>4. 描述: 对此销售的简短描述，其会出现在发票或销售单上.<br>5. 税率(金额）: 税率.<br>6. 金额: 税的金额.<br>7. 总数: 计算到当前行的总和.<br>8. 添加新行: 如果选择的是基于之前的行则可以输入行号，则计算的金额会基于引用的那一行的值进行计算(默认是之前的行).<br>9. 此税是否是基本税?:如果勾选的话则其金额不会影响在税表中的总金额，而其值被认为在商品的价格中已经包含."
+"Standard tax template that can be applied to all Sales Transactions. This template can contain list of tax heads and also other expense / income heads like ""Shipping"", ""Insurance"", ""Handling"" etc.<br><br>#### Note<br><br>The tax rate you define here will be the standard tax rate for all **Items**. If there are **Items** that have different rates, they must be added in the **Item Tax** table in the **Item** master.<br><br>#### Description of Columns<br><br>1. Calculation Type: <br>    - This can be on **Net Total** (that is the sum of basic amount).<br>    - **On Previous Row Total / Amount** (for cumulative taxes or charges). If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total.<br>    - **Actual** (as mentioned).<br>2. Account Head: The Account ledger under which this tax will be booked<br>3. Cost Center: If the tax / charge is an income (like shipping) or expense it needs to be booked against a Cost Center.<br>4. Description: Description of the tax (that will be printed in invoices / quotes).<br>5. Rate: Tax rate.<br>6. Amount: Tax amount.<br>7. Total: Cumulative total to this point.<br>8. Enter Row: If based on ""Previous Row Total"" you can select the row number which will be taken as a base for this calculation (default is the previous row).<br>9. Is this Tax included in Basic Rate?: If you check this, it means that this tax will not be shown below the item table, but will be included in the Basic Rate in your main item table. This is useful where you want give a flat price (inclusive of all taxes) price to customers.","销售税务模板可以应用到销售交易中.这个模板能够包含基本的税以及其它开销例如运输费, 保险费, 处理费等等.<br><br>#### 请注意<br><br>在这定义的标准税务模板会应用到所有的商品. 如果商品不同的税种, 那么必须在商品主数据里的税表进行定义.<br><br>#### 税表的列的描述<br><br>1. 计算类型: <br>    -基于交易总金额 (商品销售金额).<br>    - **基于前一行的总值或金额** (针对的是累加税或费用). 如果选择这个选项, 税会应用在税表此输入行的上一行的值上.<br>    - **实际的** (如以前描述过的. 例如运输费).<br>2. 户头: 会在那个账户下记录账目以及税务<br>3. 成本中心: 如果税或者费用是收入或者是支出则其要记录在成本中心下面.<br>4. 描述: 对此销售的简短描述，其会出现在发票或销售单上.<br>5. 税率(金额）: 税率.<br>6. 金额: 税的金额.<br>7. 总数: 计算到当前行的总和.<br>8. 添加新行: 如果选择的是基于之前的行则可以输入行号，则计算的金额会基于引用的那一行的值进行计算(默认是之前的行).<br>9. 此税是否是基本税?:如果勾选的话则其金额不会影响在税表中的总金额，而其值被认为在商品的价格中已经包含."
 "Standard tax template that can be applied to all Purchase Transactions. This template can contain list of tax heads and also other expense heads like ""Shipping"", ""Insurance"", ""Handling"" etc.<br><br>#### Note<br><br>The tax rate you define here will be the standard tax rate for all **Items**. If there are **Items** that have different rates, they must be added in the **Item Tax** table in the **Item** master.<br><br>#### Description of Columns<br><br>1. Calculation Type: <br>    - This can be on **Net Total** (that is the sum of basic amount).<br>    - **On Previous Row Total / Amount** (for cumulative taxes or charges). If you select this option, the tax will be applied as a percentage of the previous row (in the tax table) amount or total.<br>    - **Actual** (as mentioned).<br>2. Account Head: The Account ledger under which this tax will be booked<br>3. Cost Center: If the tax / charge is an income (like shipping) or expense it needs to be booked against a Cost Center.<br>4. Description: Description of the tax (that will be printed in invoices / quotes).<br>5. Rate: Tax rate.<br>6. Amount: Tax amount.<br>7. Total: Cumulative total to this point.<br>8. Enter Row: If based on ""Previous Row Total"" you can select the row number which will be taken as a base for this calculation (default is the previous row).<br>9. Consider Tax or Charge for: In this section you can specify if the tax / charge is only for valuation (not a part of total) or only for total (does not add value to the item) or for both.<br>10. Add or Deduct: Whether you want to add or deduct the tax.","采购税务模板可以应用到采购交易中.这个模板能够包含基本的税以及其它开销例如运输费, 保险费, 处理费等等.<br><br>#### 请注意<br><br>在这定义的标准税务模板会应用到所有的商品. 如果商品不同的税种, 那么必须在商品主数据里的税表进行定义.<br><br>#### 税表的列的描述<br><br>1. 计算类型: <br>    -基于交易总金额 (商品销售金额).<br>    - **基于前一行的总值或金额** (针对的是累加税或费用). 如果选择这个选项, 税会应用在税表此输入行的上一行的值上.<br>    - **实际的** (如以前描述过的. 例如运输费).<br>2. 户头: 会在那个账户下记录账目以及税务<br>3. 成本中心: 如果税或者费用是收入或者是支出则其要记录在成本中心下面.<br>4. 描述: 对此销售的简短描述，其会出现在发票或销售单上.<br>5. 税率(金额）: 税率.<br>6. 金额: 税的金额.<br>7. 总数: 计算到当前行的总和.<br>8. 添加新行: 如果选择的是基于之前的行则可以输入行号，则计算的金额会基于引用的那一行的值进行计算(默认是之前的行).<br>9.税或费用影响对象: 你可以指明其只影响库存估值 (不包含在总值里面) 或仅仅是总值 (不会在商品在库存的估值) 或两者都影响.<br>10. 增加或扣除: 是否是增税还是减税项."
 Create Payment Entries against Orders or Invoices.,为订单或发票创建付款记录
 Received Or Paid,已接收或已付款
@@ -3609,3 +3609,20 @@ Row {0}: Payment Amount cannot be greater than Outstanding Amount,第{0}行: 付
 Please enter Payment Amount in atleast one row,请至少在一行中输入付款金额
 Row {0}: {1} is not a valid {2},第{0}行: {1}不是一个有效的{2}
 No permission to use Payment Tool,无权限使用付款工具
+"The date on which next invoice will be generated. It is generated on submit.","发票的生成日期是在提交时生成的"
+The unique id for tracking all recurring invoices. It is generated on submit.,在提交时自动产生的标识；用它可以跟踪所有的经常性发票
+There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpboost.com if the problem persists.,有一个错误有可能是因为您没有保存数据。如果问题仍然存在，请联系管理员。
+"We have just starting using ERP Boost, the ERP built for the web and loving it.",开始使用ERP Boost
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",填写您的内容
+This is an example website auto-generated from ERP Boost,这是自动产生的默认网站
+Contact,联系我们
+Blog,博客
+Explore,开始探索
+Old Password Required.,请填写旧密码
+"New Password Required.",请填写新密码
+Old Password,旧密码
+New Password,新密码
+Switch to Desk,进入后台
+Please enter both your email and message so that we \can get back to you. Thanks!,为了方便让我们联系到您，请留下您的联系方式，谢谢
+Website URL,网站链接
+Open It,打开

@@ -16,5 +16,5 @@ $(document).bind('toolbar_setup', function() {
 		"white-space": "nowrap"
 	});
 
-	$('[data-link="docs"]').attr("href", "https://erpnext.com/user-guide")
+	$('[data-link="docs"]').attr("href", "https://erpboost.com/")
 });

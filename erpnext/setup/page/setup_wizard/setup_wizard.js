@@ -60,11 +60,9 @@ frappe.pages['setup-wizard'].onload = function(wrapper) {
 				icon: "icon-globe",
 				fields: [
 					{"fieldname": "language", "label": __("Language"), "fieldtype": "Select",
-						options: ["english", "العربية", "deutsch", "ελληνικά", "español", "français", "हिंदी", "hrvatski",
-						"italiano", "nederlands", "polski", "português brasileiro", "português", "српски", "தமிழ்",
-						"ไทย", "中国（简体）", "中國（繁體）"], reqd:1},
+						options: ["中国（简体）","english"], reqd:1},
 				],
-				help: __("Welcome to ERPNext. Please select your language to begin the Setup Wizard."),
+				help: __("Welcome to ERP Boost. Please select your language to begin the Setup Wizard."),
 				onload: function(slide) {
 					slide.get_input("language").on("change", function() {
 						var lang = $(this).val();
@@ -150,6 +148,11 @@ frappe.pages['setup-wizard'].onload = function(wrapper) {
 									function(opts, country) { return opts.currency; }))).sort());
 							slide.get_input("timezone").empty()
 								.add_options([""].concat(frappe.all_timezones));
+
+							//set default country as china
+							slide.get_input("country").val("China");
+							slide.get_input("currency").val("CNY");
+							slide.get_input("timezone").val("Asia/Chongqing");
 						}
 					})
 
@@ -198,7 +201,7 @@ frappe.pages['setup-wizard'].onload = function(wrapper) {
 					{fieldname:'fy_end_date', label:__('Financial Year End Date'), fieldtype:'Date',
 						description: __('Your financial year ends on'), reqd:1},
 					{fieldname:'company_tagline', label: __('What does it do?'), fieldtype:'Data',
-						placeholder:__('e.g. "Build tools for builders"'), reqd:1},
+						placeholder:__('e.g. Build tools for builders'), reqd:1},
 				],
 				help: __('The name of your company for which you are setting up this system.'),
 				onload: function(slide) {
@@ -210,7 +213,7 @@ frappe.pages['setup-wizard'].onload = function(wrapper) {
 
 					slide.get_input("company_abbr").on("change", function() {
 						if(slide.get_input("company_abbr").val().length > 5) {
-							msgprint("Company Abbreviation cannot have more than 5 characters");
+							msgprint(__("Company Abbreviation cannot have more than 5 characters"));
 							slide.get_input("company_abbr").val("");
 						}
 					});

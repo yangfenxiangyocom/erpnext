@@ -49,5 +49,5 @@ args = {
 "tax_rate_1": "12.5",
 "timezone": "Asia/Calcutta",
 "password": "password",
-"email": "test@erpnext.com",
+"email": "test@erpboost.com",
 }
