@@ -46,7 +46,7 @@ def before_tests():
 			"fy_end_date"		:"2014-12-31",
 			"language"			:"english",
 			"company_tagline"	:"Testing",
-			"email"				:"test@erpnext.com",
+			"email"				:"test@erpboost.com",
 			"password"			:"test"
 		})
 
