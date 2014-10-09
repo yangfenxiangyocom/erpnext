@@ -73,9 +73,9 @@ pscript['onload_Accounts Browser'] = function(wrapper){
 
 pscript.set_title = function(wrapper, ctype, val) {
 	if(val) {
-		wrapper.appframe.set_title('Chart of '+ctype+'s' + " - " + cstr(val));
+		wrapper.appframe.set_title(__('Chart of '+ctype+'s') + " - " + cstr(val));
 	} else {
-		wrapper.appframe.set_title('Chart of '+ctype+'s');
+		wrapper.appframe.set_title(__('Chart of '+ctype+'s'));
 	}
 }
 
@@ -99,7 +99,7 @@ erpnext.AccountsChart = Class.extend({
 		me.can_delete = frappe.model.can_delete(this.ctype);
 		me.can_write = frappe.model.can_write(this.ctype);
 
-
+		var hotfix = __('Chart of Cost Centers');
 		me.company = company;
 		this.tree = new frappe.ui.Tree({
 			parent: $(wrapper),
