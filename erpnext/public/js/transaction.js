@@ -549,7 +549,7 @@ erpnext.TransactionController = erpnext.stock.StockController.extend({
 		}).join("\n");
 
 		if(!rows) return "";
-		return '<p><a href="#" onclick="$(\'.tax-break-up\').toggleClass(\'hide\'); return false;">Show / Hide tax break-up</a><br><br></p>\
+		return '<p><a href="#" onclick="$(\'.tax-break-up\').toggleClass(\'hide\'); return false;">' + __("Show / Hide tax break-up") + '</a><br><br></p>\
 		<div class="tax-break-up hide" style="overflow-x: auto;"><table class="table table-bordered table-hover">\
 			<thead><tr>' + headings + '</tr></thead> \
 			<tbody>' + rows + '</tbody> \
@@ -592,7 +592,7 @@ erpnext.TransactionController = erpnext.stock.StockController.extend({
 				__(' is mandatory. Maybe Currency Exchange record is not created for ') +
 				'%(from_currency)s' + __(" to ") + '%(to_currency)s',
 				{
-					"conversion_rate_label": conversion_rate_label,
+					"conversion_rate_label": __(conversion_rate_label),
 					"from_currency": this.frm.doc.currency,
 					"to_currency": company_currency
 				}));

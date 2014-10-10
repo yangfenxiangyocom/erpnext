@@ -1663,7 +1663,7 @@ Master Type,基础数据类型
 Masters,基础数据
 Match non-linked Invoices and Payments.,匹配无关联的发票和付款
 Material Issue,物料发放
-Material Receipt,物料收入
+Material Receipt,物料收据
 Material Request,物料需求
 Material Request Detail No,物料请求详情编号
 Material Request For Warehouse,物料需求仓库
@@ -2787,7 +2787,7 @@ Status must be one of {0},状态必须是{0}中的一个
 Status of {0} {1} is now {2},Status of {0} {1} is now {2}
 Status updated to {0},状态更新为{0}
 Statutory info and other general information about your Supplier,关于供应商的法定信息和其它普通信息
-Stay Updated,保持更新状态
+Stay Updated,有更新通知我
 Stock,库存
 Stock Adjustment,库存调整
 Stock Adjustment Account,库存调整账户
@@ -3626,3 +3626,10 @@ Switch to Desk,进入后台
 Please enter both your email and message so that we \can get back to you. Thanks!,为了方便让我们联系到您，请留下您的联系方式，谢谢
 Website URL,网站链接
 Open It,打开
+Repack,重新打包
+Manufacture,生产
+Please specify a valid Row ID for row {0} in table {1},表 {1}第{0}行请指明有效的引用行号
+Actual type tax cannot be included in Item rate in row {0},第{0}行实际值类型税不能包含在商品价格中
+"For row {0} in {1}. To include {2} in Item rate, rows {3} must also be included","{1}中的第{0}行 . 如果将{2}包含进价格里, 则第{3}行必须被包含进来"
+ is mandatory. Maybe Currency Exchange record is not created for ,是必填的。也许是因为汇率兑换记录尚未建立:
+ Show / Hide tax break-up,显示或隐藏税务细分
