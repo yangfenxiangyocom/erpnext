@@ -3632,4 +3632,6 @@ Please specify a valid Row ID for row {0} in table {1},表 {1}第{0}行请指明
 Actual type tax cannot be included in Item rate in row {0},第{0}行实际值类型税不能包含在商品价格中
 "For row {0} in {1}. To include {2} in Item rate, rows {3} must also be included","{1}中的第{0}行 . 如果将{2}包含进价格里, 则第{3}行必须被包含进来"
  is mandatory. Maybe Currency Exchange record is not created for ,是必填的。也许是因为汇率兑换记录尚未建立:
- Show / Hide tax break-up,显示或隐藏税务细分
+Show / Hide tax break-up,显示或隐藏税务细分
+"""Row {0}: Qty not avalable in warehouse {1} on {2} {3}.Available Qty: {4}, Transfer Qty: {5}""","行{0}：仓库{1}数量中在{2} {3}中不可用 有货数量：{4}，转移数量：{5}"
+Customer is mandatory if 'Opportunity From' is selected as Customer,如果指明是从机会是从客户而来则请选择客户

@@ -85,7 +85,7 @@ class Opportunity(TransactionBase):
 		if self.enquiry_from == 'Lead' and not self.lead:
 			frappe.throw(_("Lead must be set if Opportunity is made from Lead"))
 		elif self.enquiry_from == 'Customer' and not self.customer:
-			msgprint("Customer is mandatory if 'Opportunity From' is selected as Customer", raise_exception=1)
+			msgprint(_("Customer is mandatory if 'Opportunity From' is selected as Customer"), raise_exception=1)
 
 	def validate(self):
 		self._prev = frappe._dict({

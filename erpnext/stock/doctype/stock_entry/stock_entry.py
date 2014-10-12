@@ -231,8 +231,7 @@ class StockEntry(StockController):
 
 			# validate qty during submit
 			if d.docstatus==1 and d.s_warehouse and not allow_negative_stock and d.actual_qty < d.transfer_qty:
-				frappe.throw(_("""Row {0}: Qty not avalable in warehouse {1} on {2} {3}.
-					Available Qty: {4}, Transfer Qty: {5}""").format(d.idx, d.s_warehouse,
+				frappe.throw(_("""Row {0}: Qty not avalable in warehouse {1} on {2} {3}.Available Qty: {4}, Transfer Qty: {5}""").format(d.idx, d.s_warehouse,
 					self.posting_date, self.posting_time, d.actual_qty, d.transfer_qty))
 
 			# get incoming rate
