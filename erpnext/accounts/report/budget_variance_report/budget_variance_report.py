@@ -42,7 +42,7 @@ def get_columns(filters):
 	for fieldname in ["fiscal_year", "period", "company"]:
 		if not filters.get(fieldname):
 			label = (" ".join(fieldname.split("_"))).title()
-			msgprint(_("Please specify") + ": " + label,
+			msgprint(_("Please specify") + ": " + _(label),
 				raise_exception=True)
 
 	columns = [_("Cost Center") + ":Link/Cost Center:120", _("Account") + ":Link/Account:120"]
