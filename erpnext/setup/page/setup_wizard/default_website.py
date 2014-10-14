@@ -57,11 +57,12 @@ class website_maker(object):
 			"label":_("Blog"),
 			"url": "blog"
 		})
-		website_settings.append("top_bar_items", {
-			"doctype": "Top Bar Item",
-			"label": _("Products"),
-			"url": "products"
-		})
+
+		#website_settings.append("top_bar_items", {
+		#	"doctype": "Top Bar Item",
+		#	"label": _("Products"),
+		#	"url": "products"
+		#})
 		website_settings.save()
 
 	def make_blog(self):

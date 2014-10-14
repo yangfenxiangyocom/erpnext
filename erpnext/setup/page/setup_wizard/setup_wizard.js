@@ -60,7 +60,7 @@ frappe.pages['setup-wizard'].onload = function(wrapper) {
 				icon: "icon-globe",
 				fields: [
 					{"fieldname": "language", "label": __("Language"), "fieldtype": "Select",
-						options: ["中国（简体）","english"], reqd:1},
+						options: ["english","中国（简体）"], reqd:1},
 				],
 				help: __("Welcome to ERP Boost. Please select your language to begin the Setup Wizard."),
 				onload: function(slide) {

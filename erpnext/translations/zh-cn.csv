@@ -76,7 +76,7 @@ Accepted Quantity,合格数量
 Accepted Warehouse,合格品存放仓库
 Account,账户
 Account Balance,账户余额
-Account Created: {0},帐户创建时间:{0}
+Account Created: {0},帐户被创建: {0}
 Account Details,帐户明细
 Account Head,户头
 Account Name,帐户名称
