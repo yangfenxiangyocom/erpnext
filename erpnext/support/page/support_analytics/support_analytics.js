@@ -25,15 +25,16 @@ erpnext.SupportAnalytics = frappe.views.GridReportWithPlot.extend({
 			doctypes: ["Support Ticket", "Fiscal Year"],
 		});
 	},
-	
 	filters: [
 		{fieldtype:"Select", label: __("Fiscal Year"), link:"Fiscal Year", 
 			default_value: __("Select Fiscal Year") + "..."},
-		{fieldtype:"Date", label: __("From Date")},
+		{fieldtype:"Date", label: __("From Date"), fieldname: "from_date"},
 		{fieldtype:"Label", label: __("To")},
-		{fieldtype:"Date", label: __("To Date")},
-		{fieldtype:"Select", label: __("Range"), 
-			options:["Daily", "Weekly", "Monthly", "Quarterly", "Yearly"]},
+		{fieldtype:"Date", label: __("To Date"), fieldname: "to_date"},
+		{fieldtype:"Select", label: __("Range"), fieldname: "range",
+			options:[{label: __("Daily"), value: "Daily"}, {label: __("Weekly"), value: "Weekly"},
+				{label: __("Monthly"), value: "Monthly"}, {label: __("Quarterly"), value: "Quarterly"},
+				{label: __("Yearly"), value: "Yearly"}]},
 		{fieldtype:"Button", label: __("Refresh"), icon:"icon-refresh icon-white"},
 		{fieldtype:"Button", label: __("Reset Filters"), icon: "icon-filter"}
 	],
@@ -47,19 +48,22 @@ erpnext.SupportAnalytics = frappe.views.GridReportWithPlot.extend({
 		this.make_date_range_columns();		
 		this.columns = std_columns.concat(this.columns);
 	},
-	
+	init_filter_values: function() {
+		this.filter_inputs.range.val('Monthly');
+	},
+
 	prepare_data: function() {
 		// add Opening, Closing, Totals rows
 		// if filtered by account and / or voucher
 		var me = this;
-		var total_tickets = {status:"All Tickets", "id": "all-tickets",
+		var total_tickets = {status:__("All Tickets"), "id": "all-tickets",
 			checked:true};
-		var days_to_close = {status:"Days to Close", "id":"days-to-close",
+		var days_to_close = {status:__("Days to Close"), "id":"days-to-close",
 			checked:false};
 		var total_closed = {};
-		var hours_to_close = {status:"Hours to Close", "id":"hours-to-close", 
+		var hours_to_close = {status:__("Hours to Close"), "id":"hours-to-close", 
 			checked:false};
-		var hours_to_respond = {status:"Hours to Respond", "id":"hours-to-respond", 
+		var hours_to_respond = {status:__("Hours to Respond"), "id":"hours-to-respond", 
 			checked:false};
 		var total_responded = {};
 

@@ -1,6 +1,7 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
 // License: GNU General Public License v3. See license.txt
-
+//hotfix
+//__("Jan");__("Feb");__("Mar");__("Apr");__("May");__("Jun");__("Jul");__("Aug");__("Sep");__("Oct");__("Nov");__("Dec")
 frappe.query_reports["Monthly Salary Register"] = {
 	"filters": [
 		{

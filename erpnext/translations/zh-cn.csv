@@ -3445,7 +3445,7 @@ To Datetime,结束时间
 Task Subject,任务标题
 Project Id,项目
 Cost of Purchased Items,已采购商品花销
-Cost of Issued Items,Cost of Issued Items
+Cost of Issued Items,库存条目花销
 Cost of Delivered Items,已交付商品花销
 Prorject Status,项目状态
 New Customers,新客户
@@ -3640,3 +3640,12 @@ Quotations,报价单
 Sales Orders,销售订单
 Active Leads / Customers,潜在客户或客户
 Opportunities,机会
+Ref Date,相关日期
+Amounts not reflected in bank,金额在银行未体现
+Amounts not reflected in system,金额在系统未体现
+System Balance,系统余额
+Expected balance as per bank,银行余额符合预期
+All Tickets,所有
+Days to Close,关闭所用天数
+Hours to Close,关闭所用小时
+Hours to Respond,响应时间(小时)

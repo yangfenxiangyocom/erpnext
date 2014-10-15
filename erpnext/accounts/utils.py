@@ -37,7 +37,7 @@ def get_fiscal_years(date=None, fiscal_year=None, label="Date", verbose=1):
 def validate_fiscal_year(date, fiscal_year, label="Date"):
 	years = [f[0] for f in get_fiscal_years(date, label=label)]
 	if fiscal_year not in years:
-		throw(_("{0} '{1}' not in Fiscal Year {2}").format(label, formatdate(date), fiscal_year))
+		throw(_("{0} '{1}' not in Fiscal Year {2}").format(_(label), formatdate(date), fiscal_year))
 
 @frappe.whitelist()
 def get_balance_on(account=None, date=None):
