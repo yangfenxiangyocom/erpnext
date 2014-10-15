@@ -76,11 +76,11 @@ erpnext.SalesAnalytics = frappe.views.TreeGridReport.extend({
 		this.tree_grid = this.tree_grids[this.tree_type];
 
 		var std_columns = [
-			{id: "check", name: "Plot", field: "check", width: 30,
+			{id: "check", name: __("Plot"), field: "check", width: 30,
 				formatter: this.check_formatter},
-			{id: "name", name: this.tree_grid.label, field: "name", width: 300,
+			{id: "name", name: __(this.tree_grid.label), field: "name", width: 300,
 				formatter: this.tree_formatter},
-			{id: "total", name: "Total", field: "total", plot: false,
+			{id: "total", name: __("Total"), field: "total", plot: false,
 				formatter: this.currency_formatter}
 		];
 

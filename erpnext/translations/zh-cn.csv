@@ -1516,7 +1516,7 @@ Lead,潜在客户
 Lead Details,潜在客户详情
 Lead Id,销售引子
 Lead Name,潜在客户名称
-Lead Owner,销售引子所有者
+Lead Owner,潜在客户提供者
 Lead Source,潜在客户来源
 Lead Status,潜在客户状态
 Lead Time Date,交货日期
@@ -3445,7 +3445,7 @@ To Datetime,结束时间
 Task Subject,任务标题
 Project Id,项目
 Cost of Purchased Items,已采购商品花销
-Cost of Issued Items,Cost of Issued Items
+Cost of Issued Items,库存条目花销
 Cost of Delivered Items,已交付商品花销
 Prorject Status,项目状态
 New Customers,新客户
@@ -3458,7 +3458,7 @@ Contribution Amount,贡献金额
 Achieved,完成
 Number of Order,订单数量
 Total Order Value,所有订单价值
-Total Order Considered,Total Order Considered
+Total Order Considered,订单实际可能价值
 Last Order Amount,上次订单金额
 Last Sales Order Date,上次销售订单日期
 Amt,金额
@@ -3635,3 +3635,17 @@ Actual type tax cannot be included in Item rate in row {0},第{0}行实际值类
 Show / Hide tax break-up,显示或隐藏税务细分
 """Row {0}: Qty not avalable in warehouse {1} on {2} {3}.Available Qty: {4}, Transfer Qty: {5}""","行{0}：仓库{1}数量中在{2} {3}中不可用 有货数量：{4}，转移数量：{5}"
 Customer is mandatory if 'Opportunity From' is selected as Customer,如果指明是从机会是从客户而来则请选择客户
+No Data,无数据
+Quotations,报价单
+Sales Orders,销售订单
+Active Leads / Customers,潜在客户或客户
+Opportunities,机会
+Ref Date,相关日期
+Amounts not reflected in bank,金额在银行未体现
+Amounts not reflected in system,金额在系统未体现
+System Balance,系统余额
+Expected balance as per bank,银行余额符合预期
+All Tickets,所有
+Days to Close,关闭所用天数
+Hours to Close,关闭所用小时
+Hours to Respond,响应时间(小时)
