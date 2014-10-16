@@ -3185,7 +3185,7 @@ Validate,验证
 Valuation,产品估值(库存)
 Valuation Method,估值方法
 Valuation Rate,估值价格
-Valuation Rate required for Item {0},Valuation Rate required for Item {0}
+Valuation Rate required for Item {0},商品{0}的估值价格必填
 Valuation and Total,总值及产品估值
 Value,值
 Value or Qty,价值或数量
@@ -3323,12 +3323,12 @@ Your setup is complete. Refreshing...,您的设置已完成。更新中...
 Your support email id - must be a valid email - this is where your emails will come!,您的邮箱 ID必须是一个有效的邮箱！
 [Error],[错误]
 [Select],[选择]
-`Freeze Stocks Older Than` should be smaller than %d days.,`Freeze Stocks Older Than` should be smaller than %d days.
+`Freeze Stocks Older Than` should be smaller than %d days.,`冻结库存条目[创建多少天以后]` 应该小于 %d 天.
 and,和
 are not allowed.,是不允许的
 assigned by,分配人
 cannot be greater than 100,不能大于100
-"e.g. ""Build tools for builders""","e.g. ""Build tools for builders"""
+"e.g. ""Build tools for builders""","e.g. ""引擎供应商"""
 "e.g. ""MC""",例如“MC”
 "e.g. ""My Company LLC""",例如“我的公司名字”
 e.g. 5,例如5
@@ -3615,7 +3615,7 @@ There was an error. One probable reason could be that you haven't saved the form
 "We have just starting using ERP Boost, the ERP built for the web and loving it.",开始使用ERP Boost
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",填写您的内容
 This is an example website auto-generated from ERP Boost,这是自动产生的默认网站
-Contact,联系人
+Contact,联系我们
 Blog,博客
 Explore,开始探索
 Old Password Required.,请填写旧密码
@@ -3649,3 +3649,11 @@ All Tickets,所有
 Days to Close,关闭所用天数
 Hours to Close,关闭所用小时
 Hours to Respond,响应时间(小时)
+Row {0}: Please check 'Is Advance' against Account {1} if this is an advance entry.,第{0}行: 如果是预付款项则请为账户{1}勾选'是预付款'
+Row {0}: Payment against Sales/Purchase Order should always be marked as advance,第{0}行: 采购/销售订单的付款应该被标记为预付款
+Shipping Address Name,送货地址名称
+Actual Qty is mandatory,实际数量是必填的
+Dynamic Link/Voucher Type,动态链接/分类账类型
+{0} {1} is fully billed,{0} {1}款已付清
+{0} {1} is stopped,{0} {1}已停止
+Account: {0} can only be updated via Stock Transactions,账户: {0}只能通过库存交易进行更新
