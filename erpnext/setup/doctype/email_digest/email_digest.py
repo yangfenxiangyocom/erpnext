@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
 # License: GNU General Public License v3. See license.txt
 
@@ -35,8 +36,7 @@ digest_template = """<style>p.ed-indent { margin-right: 17px; }</style>
 %(with_value)s
 %(no_value)s
 <hr>
-<p style="color: #888; font-size: 90%%">To change what you see here,
-create more digests, go to Setup > Email Digest</p>"""
+<p style="color: #888; font-size: 90%%">""" + _("To change what you see here,create more digests, go to Setup > Email Digest") + """</p>"""
 
 row_template = """<p style="%(style)s">
 <span>%(label)s</span>:
@@ -84,8 +84,8 @@ class EmailDigest(Document):
 					common_msg)
 				if msg_for_this_receipient:
 					sendmail(recipients=user_id,
-						subject="[ERPNext] [{frequency} Digest] {name}".format(
-							frequency=self.frequency, name=self.name),
+						subject=("[博实] [{frequency} " + _("Digest")+ "] {name}").format(
+							frequency=_(self.frequency), name=_(self.name)),
 						msg=msg_for_this_receipient)
 
 	def get_digest_msg(self):
