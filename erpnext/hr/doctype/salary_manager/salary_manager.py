@@ -52,7 +52,7 @@ class SalaryManager(Document):
 	def check_mandatory(self):
 		for f in ['company', 'month', 'fiscal_year']:
 			if not self.get(f):
-				frappe.throw(_("Please set {0}").format(f))
+				frappe.throw(_("Please set {0}").format(_(f)))
 
 	def get_month_details(self, year, month):
 		ysd = frappe.db.get_value("Fiscal Year", year, "year_start_date")

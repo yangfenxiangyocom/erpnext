@@ -3615,7 +3615,7 @@ There was an error. One probable reason could be that you haven't saved the form
 "We have just starting using ERP Boost, the ERP built for the web and loving it.",开始使用ERP Boost
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",填写您的内容
 This is an example website auto-generated from ERP Boost,这是自动产生的默认网站
-Contact,联系我们
+Contact,联系方式
 Blog,博客
 Explore,开始探索
 Old Password Required.,请填写旧密码
@@ -3657,3 +3657,8 @@ Dynamic Link/Voucher Type,动态链接/分类账类型
 {0} {1} is fully billed,{0} {1}款已付清
 {0} {1} is stopped,{0} {1}已停止
 Account: {0} can only be updated via Stock Transactions,账户: {0}只能通过库存交易进行更新
+company,公司
+month,月份
+fiscal_year,财年
+[Primary],[主要的]
+contact,联系人
