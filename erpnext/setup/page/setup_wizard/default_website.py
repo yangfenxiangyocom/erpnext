@@ -26,7 +26,7 @@ class website_maker(object):
 			"published": 1,
 			"header": "<h1>{0}</h1>".format(self.tagline or "Headline")+\
 				'<p>'+_("This is an example website auto-generated from ERP Boost")+"</p>"+\
-				'<p><a class="btn btn-primary" href="/login">Login</a></p>',
+				'<p><a class="btn btn-primary" href="/login">' + _("Login") + '</a></p>',
 			"description": self.company + ":" + (self.tagline or ""),
 			"css": frappe.get_template("setup/page/setup_wizard/sample_home_page.css").render(),
 			"main_section": frappe.get_template("setup/page/setup_wizard/sample_home_page.html").render({
@@ -83,12 +83,12 @@ class website_maker(object):
 
 		frappe.get_doc({
 			"doctype": "Blog Post",
-			"title": "Welcome",
+			"title": _("Welcome"),
 			"published": 1,
 			"published_on": nowdate(),
 			"blogger": blogger.name,
 			"blog_category": blog_category.name,
-			"blog_intro": "My First Blog",
+			"blog_intro": _("My First Blog"),
 			"content": frappe.get_template("setup/page/setup_wizard/sample_blog_post.html").render(),
 		}).insert()
 

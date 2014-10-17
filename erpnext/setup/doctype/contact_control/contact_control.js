@@ -85,16 +85,17 @@ cur_frm.cscript.render_row_in_wrapper = function(wrapper, data, doctype) {
 	var $wrapper = $(wrapper);
 
 	data.doctype = doctype.toLowerCase();
+	data.doctype_show = __(doctype);
 
 	//TMP fix, let it read Billing's translation
-	var tt = __("Billing");
+	//var tt = __("Billing");__("Contact");__("[Primary]");
 	data.fullname = __(data.fullname);
 
 	$wrapper.append(repl("\
 		<h4><a class='link_type'>%(fullname)s</a>%(primary)s</h4>\
 		<div class='description'>\
 			<p>%(description)s</p>\
-			<p><a class='delete link_type'>" + __("delete this") + " %(doctype)s</a></p>\
+			<p><a class='delete link_type'>" + __("delete this") + " %(doctype_show)s</a></p>\
 		</div>", data));
 
 	// make link
