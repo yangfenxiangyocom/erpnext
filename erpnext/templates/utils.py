@@ -3,16 +3,17 @@
 
 from __future__ import unicode_literals
 import frappe
+from frappe import _
 
 @frappe.whitelist(allow_guest=True)
-def send_message(subject="Website Query", message="", sender="", status="Open"):
+def send_message(subject=_("Website Query"), message="", sender="", status="Open"):
 	from frappe.templates.pages.contact import send_message as website_send_message
 	res = website_send_message(subject, message, sender)
 
 	if not res:
 		return
 
-	if subject=="Support":
+	if subject==_("Support"):
 		# create support ticket
 		from erpnext.support.doctype.support_ticket.get_support_mails import add_support_communication
 		add_support_communication(subject, message, sender, mail=None)
