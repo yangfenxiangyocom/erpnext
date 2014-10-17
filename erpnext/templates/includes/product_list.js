@@ -6,8 +6,13 @@ window.get_product_list = function() {
 		window.get_product_list()
 	});
 
+	//prepare translation fix
+	messages_trans = {'product list not initialized (no start)':"产品列表未准备好",'No products found':"无产品记录",'Nothing more to show':"没有记录"};
+	$.extend(frappe._messages, messages_trans);
+
+
 	if(window.start==undefined) {
-		throw "product list not initialized (no start)"
+		throw __("product list not initialized (no start)");
 	}
 
 	$.ajax({
