@@ -119,7 +119,7 @@ Accounts Receivable,应收帐款
 Accounts Settings,账户设置
 Active,有效的
 Active: Will extract emails from ,有效的:将从邮件中提取
-Activity,活跃
+Activity,活动日志
 Activity Log,活动日志
 Activity Log:, 活动日志:
 Activity Type,作业类型
@@ -3662,3 +3662,14 @@ month,月份
 fiscal_year,财年
 [Primary],[主要的]
 contact,联系人
+Against Journal Voucher {0} is already adjusted against some other voucher,记账凭证{0}已经在其余的记账凭证中进行了调整
+"For {0}, only credit entries can be linked against another debit entry",{0}: 只有借项才能与贷项相关联
+"For {0}, only debit entries can be linked against another credit entry",{0}: 只有贷项才能与借项相关联
+Journal Voucher {0} does not have account {1} or already matched against other voucher,记账凭证{0}并不属于账户{1}或已经与其余的凭证做了配对
+Row {0}: Allocated amount {1} must be less than or equals to JV amount {2},第{0}行: 应付款{1}必须小于或等于分类账金额{2}
+Row {0}: Allocated amount {1} must be less than or equals to invoice outstanding amount {2},第{0}行: 应付款{1}必须小于或等于发票的未付款金额{2}
+"Please select Allocated Amount, Invoice Type and Invoice Number in atleast one row",请至少一行中选择应付款，发票类型以及发票号码
+against_voucher_type,凭证类型
+{0} against Sales Invoice {1},{0}在发票:{1}
+{0} against Sales Order {1},{0}在销售订单:{1}
+{0} against Purchase Order {1},{0}在采购订单{1}
