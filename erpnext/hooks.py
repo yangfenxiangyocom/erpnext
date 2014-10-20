@@ -5,7 +5,7 @@ app_publisher = "ERP Boost Your Business"
 app_description = "企业资源管理计划工具"
 app_icon = "icon-th"
 app_color = "#e74c3c"
-app_version = "4.7.2"
+app_version = "4.8.0"
 
 error_report_email = "support@erpboost.com"
 
