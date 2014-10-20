@@ -3669,3 +3669,7 @@ Journal Voucher {0} does not have account {1} or already matched against other v
 Row {0}: Allocated amount {1} must be less than or equals to JV amount {2},第{0}行: 应付款{1}必须小于或等于分类账金额{2}
 Row {0}: Allocated amount {1} must be less than or equals to invoice outstanding amount {2},第{0}行: 应付款{1}必须小于或等于发票的未付款金额{2}
 "Please select Allocated Amount, Invoice Type and Invoice Number in atleast one row",请至少一行中选择应付款，发票类型以及发票号码
+against_voucher_type,凭证类型
+{0} against Sales Invoice {1},{0}在发票:{1}
+{0} against Sales Order {1},{0}在销售订单:{1}
+{0} against Purchase Order {1},{0}在采购订单{1}
