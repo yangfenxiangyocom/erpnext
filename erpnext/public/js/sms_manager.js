@@ -3,21 +3,40 @@
 
 function SMSManager(doc) {
 	var me = this;
+	//prepare translation fix
+	messages_trans = {
+					'Your enquiry has been logged into the system. Ref No:':"您的信息已经记录到系统中,记录号:",
+					'Quotation:':"报价单:",
+					' has been sent via email. Thanks!':"已经经由邮件发出,谢谢",
+					"Sales Order:":"销售订单",
+					" has been created against ":"已经创建",
+					"Quote No:":"报价单号",
+					" for your PO: ":"采购订单:",
+					"Items has been delivered against delivery note:":"发货单商品已经发货:",
+					"Invoice:":"发票",
+					"Items has been delivered against delivery note:":"发货单商品已经发货:",
+					"Material Request:":"物料需求",
+					" has been raised in the system":"已记录在系统中",
+					"Purchase Order:":"采购订单:",
+					"Items has been received against purchase receipt:":"收货单上的商品已经进行收货:"
+					};
+	$.extend(frappe._messages, messages_trans);
+	
 	this.setup = function() {
 		var default_msg = {
 			'Lead'				: '',
-			'Opportunity'			: 'Your enquiry has been logged into the system. Ref No: ' + doc.name,
-			'Quotation'			: 'Quotation ' + doc.name + ' has been sent via email. Thanks!',
-			'Sales Order'		: 'Sales Order ' + doc.name + ' has been created against '
-						+ (doc.quotation_no ? ('Quote No:' + doc.quotation_no) : '')
-						+ (doc.po_no ? (' for your PO: ' + doc.po_no) : ''),
-			'Delivery Note'		: 'Items has been delivered against delivery note: ' + doc.name
-						+ (doc.po_no ? (' for your PO: ' + doc.po_no) : ''),
-			'Sales Invoice': 'Invoice ' + doc.name + ' has been sent via email '
-						+ (doc.po_no ? (' for your PO: ' + doc.po_no) : ''),
-			'Material Request'			: 'Material Request ' + doc.name + ' has been raised in the system',
-			'Purchase Order'	: 'Purchase Order ' + doc.name + ' has been sent via email',
-			'Purchase Receipt'	: 'Items has been received against purchase receipt: ' + doc.name
+			'Opportunity'			: __('Your enquiry has been logged into the system. Ref No:' )+ doc.name,
+			'Quotation'			: __('Quotation:') + doc.name + __(' has been sent via email. Thanks!'),
+			'Sales Order'		: __('Sales Order:') + doc.name + __(' has been created against ')
+						+ (doc.quotation_no ? (__('Quote No:') + doc.quotation_no) : '')
+						+ (doc.po_no ? (__(' for your PO: ') + doc.po_no) : ''),
+			'Delivery Note'		: __('Items has been delivered against delivery note:')+ doc.name
+						+ (doc.po_no ? (__(' for your PO: ') + doc.po_no) : ''),
+			'Sales Invoice': __('Invoice:') + doc.name + __(' has been sent via email. Thanks!')
+						+ (doc.po_no ? (__(' for your PO: ') + doc.po_no) : ''),
+			'Material Request'			: __('Material Request:') + doc.name + __(' has been raised in the system'),
+			'Purchase Order'	: __('Purchase Order:') + doc.name + __(' has been sent via email. Thanks!'),
+			'Purchase Receipt'	: __('Items has been received against purchase receipt:') + doc.name
 		}
 
 		if (in_list(['Quotation', 'Sales Order', 'Delivery Note', 'Sales Invoice'], doc.doctype))

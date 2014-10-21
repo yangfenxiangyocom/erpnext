@@ -3673,3 +3673,5 @@ against_voucher_type,凭证类型
 {0} against Sales Invoice {1},{0}在发票:{1}
 {0} against Sales Order {1},{0}在销售订单:{1}
 {0} against Purchase Order {1},{0}在采购订单{1}
+{0} Credit limit {1} crossed,{0}超过了信用限制{1}
+Stock: ,库存数量:

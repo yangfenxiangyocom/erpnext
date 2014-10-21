@@ -21,9 +21,9 @@ erpnext.POS = Class.extend({
 									<tr>\
 										<th style="width: 40%">'+__("Item")+'</th>\
 										<th style="width: 9%"></th>\
-										<th style="width: 22%; text-align: right;">Qty</th>\
+										<th style="width: 22%; text-align: right;">' + __("Qty") + '</th>\
 										<th style="width: 9%"></th>\
-										<th style="width: 20%; text-align: right;">Rate</th>\
+										<th style="width: 20%; text-align: right;">' + __("Rate") + '</th>\
 									</tr>\
 								</thead>\
 								<tbody>\
