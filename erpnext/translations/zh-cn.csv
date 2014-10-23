@@ -3675,3 +3675,8 @@ against_voucher_type,凭证类型
 {0} against Purchase Order {1},{0}在采购订单{1}
 {0} Credit limit {1} crossed,{0}超过了信用限制{1}
 Stock: ,库存数量:
+Shown in Website,显示在网站
+Manufactured Item,需制造商品
+Purchase Item,需采购商品
+Sales Item,可销售商品
+Stock Item,库存中商品
