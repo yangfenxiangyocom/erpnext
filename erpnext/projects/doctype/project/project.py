@@ -53,7 +53,7 @@ class Project(Document):
 		# add events
 		for milestone in self.get("project_milestones"):
 			if milestone.milestone_date:
-				description = (milestone.milestone or "Milestone") + " for " + self.name
+				description = (milestone.milestone or _("Milestone")) + " : " + self.name
 				frappe.get_doc({
 					"doctype": "Event",
 					"owner": self.owner,

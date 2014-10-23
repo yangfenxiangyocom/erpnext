@@ -43,9 +43,9 @@ class Lead(SellingController):
 	def add_calendar_event(self, opts=None, force=False):
 		super(Lead, self).add_calendar_event({
 			"owner": self.lead_owner,
-			"subject": ('Contact ' + cstr(self.lead_name)),
-			"description": ('Contact ' + cstr(self.lead_name)) + \
-				(self.contact_by and ('. By : ' + cstr(self.contact_by)) or '')
+			"subject": (_('Please Contact')  + ' '+ cstr(self.lead_name)),
+			"description": (_('Please Contact')  + ' '+ cstr(self.lead_name)) + \
+				(self.contact_by and (', ' + cstr(self.contact_by)) or '')
 		}, force)
 
 	def check_email_id_is_unique(self):

@@ -60,20 +60,20 @@ class Opportunity(TransactionBase):
 
 		if self.customer:
 			if self.contact_person:
-				opts.description = 'Contact '+cstr(self.contact_person)
+				opts.description = _('Please Contact') + ' '+cstr(self.contact_person)
 			else:
-				opts.description = 'Contact customer '+cstr(self.customer)
+				opts.description = _('Contact customer') + ' '+cstr(self.customer)
 		elif self.lead:
 			if self.contact_display:
-				opts.description = 'Contact '+cstr(self.contact_display)
+				opts.description = _('Please Contact') + ' '+cstr(self.contact_display)
 			else:
-				opts.description = 'Contact lead '+cstr(self.lead)
+				opts.description = _('Contact lead') + ' '+cstr(self.lead)
 
 		opts.subject = opts.description
-		opts.description += '. By : ' + cstr(self.contact_by)
+		opts.description += ', ' + cstr(self.contact_by)
 
 		if self.to_discuss:
-			opts.description += ' To Discuss : ' + cstr(self.to_discuss)
+			opts.description += _('To Discuss') + ' : ' + cstr(self.to_discuss)
 
 		super(Opportunity, self).add_calendar_event(opts, force)
 
