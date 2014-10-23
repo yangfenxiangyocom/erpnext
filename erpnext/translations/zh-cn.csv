@@ -1744,9 +1744,9 @@ Name of person or organization that this address belongs to.,这个地址从属�
 Name of the Budget Distribution,预算分配的名称
 Naming Series,命名系列
 Negative Quantity is not allowed,负数量是不允许的
-Negative Stock Error ({6}) for Item {0} in Warehouse {1} on {2} {3} in {4} {5},Negative Stock Error ({6}) for Item {0} in Warehouse {1} on {2} {3} in {4} {5}
+Negative Stock Error ({6}) for Item {0} in Warehouse {1} on {2} {3} in {4} {5},"库存数为负({6}):商品{0}; 在{4} {5}中 仓库: {1}, {2}, {3}"
 Negative Valuation Rate is not allowed,估值率为负是不允许的
-Negative balance in Batch {0} for Item {1} at Warehouse {2} on {3} {4},Negative balance in Batch {0} for Item {1} at Warehouse {2} on {3} {4}
+Negative balance in Batch {0} for Item {1} at Warehouse {2} on {3} {4},批次{0}中商品{1}: 仓库 {2} 在 {3} {4}中为负剩余
 Net Pay,净工资
 Net Pay (in words) will be visible once you save the Salary Slip.,保存工资单后净收入(只读，文字形式描述)将可见
 Net Profit / Loss,净利润/损失
@@ -3686,3 +3686,5 @@ Contact lead,联系潜在客户
 To Discuss, 讨论
 Please Contact,请联系
 Fixed Cycle Cost,固定周期成本
+Against Purchase Order,采购订单
+"Purchase rate for item: {0} not found, which is required to book accounting entry (expense). Please mention item price against a buying price list.","商品 {0}采购价格未找到, 其需要被设置在费用的账户下, 请在价格表中设置商品的采购价格"

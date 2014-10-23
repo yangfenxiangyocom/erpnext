@@ -11,7 +11,7 @@
 				<span class="label label-danger filterable"
 					title="{%= doc.get_formatted("due_date")%}"
 					data-filter="outstanding_amount,>,0|due_date,<,Today">
-						{%= __("Overdue: ") + comment_when(doc.due_date) %}
+						{%= __("Overdue:") + comment_when(doc.due_date) %}
 				</span>
 				{% } else { %}
 				<span class="label label-warning filterable"
