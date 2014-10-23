@@ -7,7 +7,7 @@
 				{%= doc.customer_name %}</span>
 			{% } %}
 			<span style="margin-right: 8px; display: inline-block"
-				title="{%= doc.customer_type %}" class="filterable"
+				title="{%= __(doc.customer_type) %}" class="filterable"
 				data-filter="customer_type,=,{%= doc.customer_type %}">
 			{% if(doc.customer_type==="Company") { %}
 				<i class="icon-building"></i>
