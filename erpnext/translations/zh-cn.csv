@@ -3680,3 +3680,8 @@ Manufactured Item,需制造商品
 Purchase Item,需采购商品
 Sales Item,可销售商品
 Stock Item,库存中商品
+"Reference: %s, Item Code: %s and Customer: %s","相关: %s, 编号: %s 客户: %s"
+Contact customer,联系客户
+Contact lead,联系潜在客户
+To Discuss, 讨论
+Please Contact,请联系
