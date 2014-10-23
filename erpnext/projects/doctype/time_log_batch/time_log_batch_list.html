@@ -6,7 +6,7 @@
 				frappe.utils.guess_style(doc.status) %} filterable"
 				style="margin-right: 8px;"
 				data-filter="status,=,{%= doc.status %}">
-				{%= doc.status %}</span>
+				{%= __(doc.status) %}</span>
 			<span style="margin-right: 8px;" class="text-muted">
 				({%= doc.total_hours + " " + __("hours") %})
 			</span>
