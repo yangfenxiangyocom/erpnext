@@ -13,6 +13,13 @@ cur_frm.cscript.onload_post_render = function(doc, cdt, cdn) {
 }
 
 cur_frm.cscript.update_selects = function(r) {
+
+	//prepare translation fix
+	messages_trans = {
+						'<div class="well"><br>Edit list of Series in the box below. Rules:<br><ul><br><li>Each Series Prefix on a new line.</li><li>Allowed special characters are "/" and "-"</li><li>Optionally, set the number of digits in the series using dot (.) followed by hashes (#). For example, ".####" means that the series will have four digits. Default is five digits.</li></ul>Examples:<br>INV-<br>INV-10-<br>INVK-<br>INV-.####<br></div>':'<div class="well"><br>编辑如下规则. 规则如下:<br><ul><br><li>每一个前缀新开一行.</li><li>允许的字符包括 "/" 和 "-"</li><li>数字部分用#说明,例如####代表4位数字,需以.开头, 默认为5位数字.</li></ul>例如:<br>INV-<br>INV-10-<br>INVK-<br>INV-.####<br></div>'
+					};
+	$.extend(frappe._messages, messages_trans);
+
 	set_field_options('select_doc_for_series', r.message.transactions);
 	set_field_options('prefix', r.message.prefixes);
 }
