@@ -168,7 +168,7 @@ class EmailDigest(Document):
 				accounts[gle["account"]][1] += gle["debit"] - gle["credit"]
 
 		# build html
-		out = self.get_html("Bank/Cash Balance as on " + formatdate(self.to_date), "", "")
+		out = self.get_html(_("Bank/Cash Balance as on ") + formatdate(self.to_date), "", "")
 		for ac in ackeys:
 			if accounts[ac][1]:
 				out += "\n" + self.get_html(accounts[ac][0], self.currency,
@@ -334,9 +334,9 @@ class EmailDigest(Document):
 				html += "<li style='line-height: 200%%'>%s [%s]</li>" % (todo.description, todo.priority)
 
 		if html:
-			return 1, "<h4>To Do (max 10):</h4><ul>" + html + "</ul><hr>"
+			return 1, "<h4>" + _("To Do (max 10)") + ":</h4><ul>" + html + "</ul><hr>"
 		else:
-			return 0, "<p>To Do</p>"
+			return 0, "<p>" + _("To Do") + "</p>"
 
 	def get_new_count(self, doctype, label, docstatus=0, filter_by_company=True, date_field="creation"):
 		if filter_by_company:
@@ -369,7 +369,7 @@ class EmailDigest(Document):
 		"""get html output"""
 		return row_template % {
 				"style": style or "",
-				"label": label,
+				"label": _(label),
 				"currency": currency and (currency+" ") or "",
 				"value": value
 			}
@@ -463,11 +463,11 @@ class EmailDigest(Document):
 			order by modified desc limit 10""", as_dict=True)
 
 		if open_tickets:
-			return 1, """<hr><h4>Latest Open Tickets (max 10):</h4>%s""" % \
+			return 1, """<hr><h4>""" + _("Latest Open Tickets (max 10)") + """:</h4>%s""" % \
 			 "".join(["<p>%(name)s: %(subject)s <br>by %(raised_by)s on %(modified)s</p>" % \
 				t for t in open_tickets])
 		else:
-			return 0, "No Open Tickets!"
+			return 0, _("No Open Tickets!")
 
 	def get_scheduler_errors(self):
 		import frappe.utils.scheduler
