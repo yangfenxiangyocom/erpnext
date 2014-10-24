@@ -24,7 +24,7 @@
 'Has Serial No' can not be 'Yes' for non-stock item,非库存项目'有序列号'的值必须是'否'
 'Notification Email Addresses' not specified for recurring invoice,经常性发票的'通知电子邮件地址'未被指定
 'Profit and Loss' type account {0} not allowed in Opening Entry,损益类账户类型{0}不允许在期初分录中
-'To Case No.' cannot be less than 'From Case No.','To Case No.'应该比'From Case No.'大
+'To Case No.' cannot be less than 'From Case No.','至包装号'应该比'起始包装号'大
 'To Date' is required,'至某日'是必填的
 'Update Stock' for Sales Invoice {0} must be set,销售发票{0}必须设置'更新库存'
 * Will be calculated in the transaction.,*交易会将其计算在内。
@@ -492,7 +492,7 @@ Capital Account,资本性账户
 Capital Equipments,资本设备
 Carry Forward,休假累计
 Carry Forwarded Leaves,休假已累计到下一期
-Case No(s) already in use. Try from Case No {0},案例编号已在使用中;请尝试{0}
+Case No(s) already in use. Try from Case No {0},包装号已在使用中;请尝试从{0}开始
 Case No. cannot be 0,案例编号不能为0
 Cash,现金
 Cash In Hand,手头现金
@@ -543,12 +543,12 @@ Close Balance Sheet and book Profit or Loss.,关闭资产负债表并记录损�
 Closed,已关闭
 Closing (Cr),关闭（Cr）
 Closing (Dr),关闭（Dr）
-Closing Account Head,关闭分类帐
-Closing Account {0} must be of type 'Liability',决算账户{0}类型必须是'债务'
+Closing Account Head,期末户头
+Closing Account {0} must be of type 'Liability',期末账户{0}类型必须是'债务'
 Closing Date,截止日期
 Closing Fiscal Year,关闭财年
 Closing Qty,期末库存
-Closing Value,收盘值
+Closing Value,期末值
 CoA Help,COA帮助
 Code,编码
 Cold Calling,陌生电话
@@ -1918,7 +1918,7 @@ Out of AMC,维护过期
 Out of Warranty,超出保修期
 Outgoing,出料
 Outstanding Amount,债务总额
-Outstanding for {0} cannot be less than zero ({1}),Outstanding for {0} cannot be less than zero ({1})
+Outstanding for {0} cannot be less than zero ({1}),{0}的债务不能小于0({1})
 Overhead,开销
 Overheads,开销
 Overlapping conditions found between:,条件之间存在重叠的;
@@ -1992,8 +1992,8 @@ Payment Period Based On Invoice Date,基于发票日期的付款日
 Payment Reconciliation,付款对账
 Payment Reconciliation Invoice,付款发票对账
 Payment Reconciliation Invoices,付款发票对账
-Payment Reconciliation Payment,Payment Reconciliation Payment
-Payment Reconciliation Payments,Payment Reconciliation Payments
+Payment Reconciliation Payment,付款对账
+Payment Reconciliation Payments,付款对账
 Payment Type,付款类型
 Payment cannot be made for empty cart,请选购商品再进行支付
 Payment of salary for the month {0} and year {1},{1}年{0}月和工资支付
@@ -2136,7 +2136,7 @@ Please specify Company,请注明公司
 Please specify Company to proceed,请注明公司来进行
 Please specify Default Currency in Company Master and Global Defaults,请在公司基础数据及全局默认中指定默认货币
 Please specify a,请指定一个
-Please specify a valid 'From Case No.',Please specify a valid 'From Case No'
+Please specify a valid 'From Case No.',请指明有效的'起始包装号'
 Please specify a valid Row ID for {0} in row {1},在第{1}行中为{0}请指定一个有效的行ID
 Please specify either Quantity or Valuation Rate or both,请指定无论是数量或估价率或两者都指定
 Please submit to update Leave Balance.,请提交并跟新休假余量
@@ -2444,7 +2444,7 @@ Requests for items.,产品所需物料
 Required By,需求方
 Required Date,需用日期
 Required Qty,所需数量
-Required only for sample item.,Required only for sample item.
+Required only for sample item.,仅对样品商品需要.
 Required raw materials issued to the supplier for producing a sub - contracted item.,需要发到分包商进行生产的原材料
 Research,调查
 Research & Development,研究与发展
@@ -2488,13 +2488,13 @@ Row #{0}: Ordered qty can not less than item's minimum order qty (defined in ite
 Row #{0}: Please specify Serial No for Item {1},行#{0}：请注明商品序号{1}
 "Row {0}: Account does not match with \
 						Purchase Invoice Credit To account","行{0}：\
-Account does not match with Purchase Invoice Credit To account"
+账户与采购发票的账户记录不匹配"
 "Row {0}: Account does not match with \
 						Sales Invoice Debit To account","行{0}：\
-Account does not match with Sales Invoice Debit To account"
+账户与销售发票账户记录不匹配"
 Row {0}: Conversion Factor is mandatory,行{0}：转换系数是强制性的
-Row {0}: Credit entry can not be linked with a Purchase Invoice,行{0}: Credit entry can not be linked with a Purchase Invoice
-Row {0}: Debit entry can not be linked with a Sales Invoice,行{0}: Debit entry can not be linked with a Sales Invoice
+Row {0}: Credit entry can not be linked with a Purchase Invoice,行{0}: 借方记录不能链接至采购发票
+Row {0}: Debit entry can not be linked with a Sales Invoice,行{0}: 贷方记录不能链接至销售发票
 Row {0}: Payment amount must be less than or equals to invoice outstanding amount. Please refer Note below.,行{0}：付款金额必须小于或等于发票未付金额。请参考下面的说明。
 Row {0}: Qty is mandatory,行{0}：数量是强制性的
 "Row {0}: Qty not avalable in warehouse {1} on {2} {3}.
@@ -2635,7 +2635,7 @@ Select account head of the bank where cheque was deposited.,选取支票存入�
 Select company name first.,先选择公司名称。
 Select template from which you want to get the Goals,从您想要得到的目标选择模板
 Select the Employee for whom you are creating the Appraisal.,选择要为其创建考核的员工。
-Select the period when the invoice will be generated automatically,Select the period when the invoice will be generated automatically
+Select the period when the invoice will be generated automatically,发票将在选择的期间自动生成
 Select the relevant company name if you have multiple companies,选择相关的公司名称如果您有多个公司
 Select the relevant company name if you have multiple companies.,选择相关的公司名称如果您有多个公司。
 Select who you want to send this newsletter to,选择你想发送此简讯的人
@@ -2675,8 +2675,8 @@ Serial No {0} does not belong to Item {1},序列号{0}不属于产品{1}
 Serial No {0} does not belong to Warehouse {1},序列号{0}不属于仓库{1}
 Serial No {0} does not exist,序列号{0}不存在
 Serial No {0} has already been received,序列号{0}已收到
-Serial No {0} is under maintenance contract upto {1},Serial No {0} is under maintenance contract upto {1}
-Serial No {0} is under warranty upto {1},Serial No {0} is under warranty upto {1}
+Serial No {0} is under maintenance contract upto {1},序列号{0}在维护合同内:时间至{1}
+Serial No {0} is under warranty upto {1},序列号{0}商品在保证期内:时间至{1}
 Serial No {0} not in stock,序列号{0}不在库存中
 Serial No {0} quantity {1} cannot be a fraction,序列号{0}数量{1}不能是小数
 Serial No {0} status must be 'Available' to Deliver,序列号{0}的状态必须为“可用的”
@@ -2687,11 +2687,11 @@ Serial number {0} entered more than once,序列号{0}已存在
 					using Stock Reconciliation","序列化的项{0}不能更新\
 请使用盘点工具"
 Series,序列号
-Series List for this Transaction,Series List for this Transaction
-Series Updated,Series Updated
-Series Updated Successfully,Series Updated Successfully
-Series is mandatory,Series is mandatory
-Series {0} already used in {1},Series {0} already used in {1}
+Series List for this Transaction,这次交易的序列号列表
+Series Updated,序列号已更新
+Series Updated Successfully,序列号更新成功
+Series is mandatory,请指明序列号
+Series {0} already used in {1},序列号{0}在{1}中已经被使用了
 Service,服务
 Service Address,服务地址
 Service Tax,服务税
@@ -2758,7 +2758,7 @@ Source File,源文件
 Source Warehouse,源仓库
 Source and target warehouse cannot be same for row {0},行{0}中的源和目标仓库不能相同
 Source of Funds (Liabilities),负债类科目
-Source warehouse is mandatory for row {0},Source warehouse is mandatory for row {0}
+Source warehouse is mandatory for row {0},第{0}行的源仓库必须被指定
 Spartan,Spartan
 "Special Characters except ""-"" and ""/"" not allowed in naming series",除了特殊字符“ - ”和“/”未命名中不允许系列
 Specification Details,规格详细
@@ -2784,7 +2784,7 @@ Statement of Account,对账单
 Static Parameters,静态参数
 Status,状态
 Status must be one of {0},状态必须是{0}中的一个
-Status of {0} {1} is now {2},Status of {0} {1} is now {2}
+Status of {0} {1} is now {2},{0}的状态由{1}变为了{2}
 Status updated to {0},状态更新为{0}
 Statutory info and other general information about your Supplier,关于供应商的法定信息和其它普通信息
 Stay Updated,有更新通知我
@@ -2811,7 +2811,7 @@ Stock Received But Not Billed,已入库但未付款
 Stock Reconciliation Data,库存对账数据
 Stock Reconciliation Template,库存对账模板
 Stock Reconciliation,库存盘点
-"Stock Reconciliation can be used to update the stock on a particular date, usually as per physical inventory.","Stock Reconciliation can be used to update the stock on a particular date, usually as per physical inventory."
+"Stock Reconciliation can be used to update the stock on a particular date, usually as per physical inventory.","库存盘点能够更新某一个时间点的库存点的数量，通常针对实体仓库进行."
 Stock Settings,库存设置
 Stock UOM,库存计量单位
 Stock UOM Replace Utility,库存计量单位替换工具
@@ -2820,8 +2820,8 @@ Stock Uom,库存计量单位
 Stock Value,库存值
 Stock Value Difference,库存值差异
 Stock balances updated,库存剩余更新
-Stock cannot be updated against Delivery Note {0},Stock cannot be updated against Delivery Note {0}
-Stock entries exist against warehouse {0} cannot re-assign or modify 'Master Name',Stock entries exist against warehouse {0} cannot re-assign or modify 'Master Name'
+Stock cannot be updated against Delivery Note {0},发货单{0}的库存不能被更新
+Stock entries exist against warehouse {0} cannot re-assign or modify 'Master Name',仓库{0}存在库存条目因此不能重新赋予或修改其'主数据名称'
 Stock transactions before {0} are frozen,在{0}之前库存事务被冻结
 Stop,停止
 Stop Birthday Reminders,停止生日提醒
@@ -2975,7 +2975,7 @@ The rate at which Bill Currency is converted into company's base currency,付款
 The unique id for tracking all recurring invoices. It is generated on submit.,用于跟踪所有经常性发票的唯一识别号会在提交后自动产生出来
 "Then Pricing Rules are filtered out based on Customer, Customer Group, Territory, Supplier, Supplier Type, Campaign, Sales Partner etc.",然后价格规则将基于客户，客户组，区域，供应商，供应商类型，促销活动，销售合作伙伴等过滤。
 There are more holidays than working days this month.,这个月的假期比工作日更多。
-"There can only be one Shipping Rule Condition with 0 or blank value for ""To Value""","There can only be one Shipping Rule Condition with 0 or blank value for ""To Value"""
+"There can only be one Shipping Rule Condition with 0 or blank value for ""To Value""",""结束值": 只能有一个运输规则的条件是0或留空"
 There is not enough leave balance for Leave Type {0},休假类型 {0}已无可用的休假天数
 There is nothing to edit.,没有什么可编辑
 There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpnext.com if the problem persists.,有一个错误有可能是因为您没有保存数据。如果问题仍然存在，请联系管理员。
@@ -2994,7 +2994,7 @@ This is a root territory and cannot be edited.,这是一个根领域无法编辑
 This is an example website auto-generated from ERPBoost,这是一个从ERPNext自动生成的示例网站
 This is the number of the last created transaction with this prefix,这次上次交易的前缀编号
 This will be used for setting rule in HR module,这将用于人力资源模块中的设置规则
-Thread HTML,Thread HTML
+Thread HTML,论坛HTML
 Thursday,星期四
 Time Log,时间记录
 Time Log Batch,批量时间记录
@@ -3164,7 +3164,7 @@ User,用户
 User ID,用户ID
 User ID not set for Employee {0},员工{0}没有设置用户ID
 User Name,用户名
-User Name or Support Password missing. Please enter and try again.,User Name or Support Password missing. Please enter and try again.
+User Name or Support Password missing. Please enter and try again.,用户名或密码不正确。请重新输入
 User Remark,用户备注
 User Remark will be added to Auto Remark,用户备注将被添加到自动备注
 User Remarks is mandatory,用户备注是必须的
@@ -3209,15 +3209,15 @@ Warehouse Contact Info,仓库联系方式
 Warehouse Detail,仓库详情
 Warehouse Name,仓库名称
 Warehouse and Reference,仓库及相关信息
-Warehouse can not be deleted as stock ledger entry exists for this warehouse.,Warehouse can not be deleted as stock ledger entry exists for this warehouse.
+Warehouse can not be deleted as stock ledger entry exists for this warehouse.,此仓库不能被删除因为有其库存分类账的存在
 Warehouse can only be changed via Stock Entry / Delivery Note / Purchase Receipt,仓库只能通过库存条目、发货单、收货单来修改
 Warehouse cannot be changed for Serial No.,仓库不能更改序​​列号
-Warehouse is mandatory for stock Item {0} in row {1},Warehouse is mandatory for stock Item {0} in row {1}
+Warehouse is mandatory for stock Item {0} in row {1},第{1}行中的商品{0}需指明库存
 Warehouse is missing in Purchase Order,采购订单中缺少仓库
 Warehouse not found in the system,系统中未找到仓库
-Warehouse required for stock Item {0},Warehouse required for stock Item {0}
-Warehouse where you are maintaining stock of rejected items,Warehouse where you are maintaining stock of rejected items
-Warehouse {0} can not be deleted as quantity exists for Item {1},Warehouse {0} can not be deleted as quantity exists for Item {1}
+Warehouse required for stock Item {0},商品{0}: 需要指明其仓库
+Warehouse where you are maintaining stock of rejected items,放置拒收商品的仓库
+Warehouse {0} can not be deleted as quantity exists for Item {1},仓库 {0} 不能被删除因为商品{1}在其中
 Warehouse {0} does not belong to company {1},仓库{0}不属于公司{1}
 Warehouse {0} does not exist,仓库{0}不存在
 Warehouse {0}: Company is mandatory,仓库{0}：公司是必须的
@@ -3227,10 +3227,10 @@ Warehouse-wise Item Reorder,仓库商品记录器
 Warehouses,仓库
 Warehouses.,仓库。
 Warn,警告
-Warning: Leave application contains following block dates,Warning: Leave application contains following block dates
+Warning: Leave application contains following block dates,警告: 申请休假的日期包含了设定的禁止休假的日期
 Warning: Material Requested Qty is less than Minimum Order Qty,警告：材料需求数量低于最低起订量
 Warning: Sales Order {0} already exists against same Purchase Order number,警告：销售订单{0}已经存在相同的采购订单号
-Warning: System will not check overbilling since amount for Item {0} in {1} is zero,Warning: System will not check overbilling since amount for Item {0} in {1} is zero
+Warning: System will not check overbilling since amount for Item {0} in {1} is zero,警告: {1}中的商品{0}数量为0; 因此系统不会检查超额部分
 Warranty / AMC Details,保修及维护详情
 Warranty / AMC Status,保修及维护状态
 Warranty Expiry Date,保修截止日期
@@ -3255,7 +3255,7 @@ Welcome,欢迎
 Welcome to ERPBoost. Over the next few minutes we will help you setup your ERPBoost account. Try and fill in as much information as you have even if it takes a bit longer. It will save you a lot of time later. Good Luck!,欢迎来到ERPNext。在接下来的几分钟里，我们将帮助您设置您的ERPBoost帐户。尽可能填写更多的信息，即使花多一点时间，它将在后面节省您大量的时间。祝您好运！
 Welcome to ERPBoost. Please select your language to begin the Setup Wizard.,欢迎来到ERPBoost 。请选择你的语言，开始安装向导。
 What does it do?,它有什么作用？
-"When any of the checked transactions are ""Submitted"", an email pop-up automatically opened to send an email to the associated ""Contact"" in that transaction, with the transaction as an attachment. The user may or may not send the email.","When any of the checked transactions are ""Submitted"", an email pop-up automatically opened to send an email to the associated ""Contact"" in that transaction, with the transaction as an attachment. The user may or may not send the email."
+"When any of the checked transactions are ""Submitted"", an email pop-up automatically opened to send an email to the associated ""Contact"" in that transaction, with the transaction as an attachment. The user may or may not send the email.","当任何以下的交易状态改变为""已提交"", 一个发邮件的弹出框为弹出来默认发送给此交易的联系人, 并且交易详情可以附件进行发送. 操作的用户可以选择发送或是不发送此封邮件"
 "When submitted, the system creates difference entries to set the given stock and valuation on this date.",提交时，系统会在该日期上创建不同的条目来设置给定的库存和估值。
 Where items are stored.,产品在哪里存放。
 Where manufacturing operations are carried out.,生产业务在哪里进行。
@@ -3276,12 +3276,12 @@ Working,工作中
 Working Days,工作天数
 Workstation,工厂
 Workstation Name,工厂名称
-Write Off Account,Write Off Account
-Write Off Amount,注销金额
-Write Off Amount <=,Write Off Amount &lt;=
-Write Off Based On,Write Off Based On
-Write Off Cost Center,Write Off Cost Center
-Write Off Outstanding Amount,Write Off Outstanding Amount
+Write Off Account,冲销账户
+Write Off Amount,冲销金额
+Write Off Amount <=,冲销金额 <=
+Write Off Based On,冲销基于
+Write Off Cost Center,冲销成本中心
+Write Off Outstanding Amount,冲销债务金额
 Write Off Voucher,冲销凭证
 Wrong Template: Unable to find head row.,错误的模板：找不到首行。
 Year,年度
@@ -3292,20 +3292,20 @@ Year Start Date,开始日期
 Year of Passing,学制年（如3年）
 Yearly,每年
 Yes,是
-You are not authorized to add or update entries before {0},You are not authorized to add or update entries before{0}
-You are not authorized to set Frozen value,您无权设定冻结值
+You are not authorized to add or update entries before {0},在{0}前你没有被授权添加或更新条目
+You are not authorized to set Frozen value,您未被授权设定冻结值
 You are the Expense Approver for this record. Please Update the 'Status' and Save,您是该费用申请的审批人，请更新“状态”并保存
 You are the Leave Approver for this record. Please Update the 'Status' and Save,您是该请假记录的审批人，请更新“状态”并保存
 You can enter any date manually,您可以手动输入任何日期
 You can enter the minimum quantity of this item to be ordered.,您可以输入该产品的最小订购数量。
-You can not change rate if BOM mentioned agianst any item,You can not change rate if BOM mentioned agianst any item
+You can not change rate if BOM mentioned agianst any item,如果申明的物料清单(BOM)有任何商品用到则不能更改价格
 You can not enter both Delivery Note No and Sales Invoice No. Please enter any one.,您不能同时输入提货单号和销售发票号，请任选其一。
-You can not enter current voucher in 'Against Journal Voucher' column,You can not enter current voucher in 'Against Journal Voucher' column
+You can not enter current voucher in 'Against Journal Voucher' column,在'记账凭证'列你不能输入当前的凭证
 You can set Default Bank Account in Company master,您可以在公司基础数据中设置默认银行账户
-You can start by selecting backup frequency and granting access for sync,You can start by selecting backup frequency and granting access for sync
+You can start by selecting backup frequency and granting access for sync,你可以选择备份频率以及授权同步进而开始使用同步功能
 You can submit this Stock Reconciliation.,您可以提交该库存盘点。
-You can update either Quantity or Valuation Rate or both.,You can update either Quantity or Valuation Rate or both.
-You cannot credit and debit same account at the same time,You cannot credit and debit same account at the same time
+You can update either Quantity or Valuation Rate or both.,你可以更新数量或估值价格或两者都进行更新
+You cannot credit and debit same account at the same time,您不能在同时间借和贷向同样的账户
 You have entered duplicate items. Please rectify and try again.,您输入了重复的产品。请纠正并重试。
 You may need to update: {0},您可能需要更新： {0}
 You must Save the form before proceeding,在继续之前，您必须先保存数据
@@ -3345,8 +3345,8 @@ to,至
 website page link,网站页面链接
 {0} '{1}' not in Fiscal Year {2},{0}“ {1}”不在财年内{2}
 {0} Credit limit {0} crossed,{0}赊销限额{0}已超过
-{0} Serial Numbers required for Item {0}. Only {0} provided.,{0} Serial Numbers required for Item {0}. Only {0} provided.
-{0} budget for Account {1} against Cost Center {2} will exceed by {3},{0} budget for Account {1} against Cost Center {2} will exceed by {3}
+{0} Serial Numbers required for Item {0}. Only {0} provided.,{0} 商品{0}的序列号必填. 仅仅 {0} 被提供了.
+{0} budget for Account {1} against Cost Center {2} will exceed by {3},成本中心:{2}; 账户{1}的{0}预算将超出{3}
 {0} can not be negative,{0}不能为负
 {0} created,{0}已创建
 {0} does not belong to Company {1},{0}不属于公司{1}
@@ -3365,7 +3365,7 @@ website page link,网站页面链接
 {0} must be reduced by {1} or you should increase overflow tolerance,{0}必须减少{1}或应增加溢出容忍度
 {0} must have role 'Leave Approver',{0}必须具备“请假审批”权限的角色
 {0} valid serial nos for Item {1},{0}对产品有效的序列号{1}
-{0} {1} against Bill {2} dated {3},{0} {1} against Bill {2} dated {3}
+{0} {1} against Bill {2} dated {3},{0} {1} 的账单{2}在{3}过期
 {0} {1} against Invoice {2},{0} {1}凭发票{2}
 {0} {1} has already been submitted,{0} {1}已经提交
 {0} {1} has been modified. Please refresh.,{0} {1}已被修改。请刷新。
@@ -3674,7 +3674,7 @@ against_voucher_type,凭证类型
 {0} against Sales Order {1},{0}在销售订单:{1}
 {0} against Purchase Order {1},{0}在采购订单{1}
 {0} Credit limit {1} crossed,{0}超过了信用限制{1}
-Stock: ,库存数量:
+Stock: ,库存数量
 Shown in Website,显示在网站
 Manufactured Item,需制造商品
 Purchase Item,需采购商品
@@ -3690,3 +3690,6 @@ Against Purchase Order,采购订单
 "Purchase rate for item: {0} not found, which is required to book accounting entry (expense). Please mention item price against a buying price list.","商品 {0}采购价格未找到, 其需要被设置在费用的账户下, 请在价格表中设置商品的采购价格"
 Cost Centers,成本中心
 "Row {0}: Qty not avalable in warehouse {1} on {2} {3}.Available Qty: {4}, Transfer Qty: {5}","行{0}：仓库{1}中没有可用的数量有货数量：{4}，转移数量：{5}, {2} {3}"
+Mobile Number,手机号
+Accounting Ledger,账目
+Payment Pending,待付款

@@ -451,7 +451,7 @@ class AccountsController(TransactionBase):
 				ref_amt = flt(frappe.db.get_value(ref_dt + " Item",
 					item.get(item_ref_dn), based_on), self.precision(based_on, item))
 				if not ref_amt:
-					frappe.msgprint(_("Warning: System will not check overbilling since amount for Item {0} in {1} is zero").format(item.item_code, ref_dt))
+					frappe.msgprint(_("Warning: System will not check overbilling since amount for Item {0} in {1} is zero").format(item.item_code, _(ref_dt)))
 				else:
 					already_billed = frappe.db.sql("""select sum(%s) from `tab%s`
 						where %s=%s and docstatus=1 and parent != %s""" %

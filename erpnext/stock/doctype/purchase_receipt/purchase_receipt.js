@@ -19,7 +19,7 @@ erpnext.stock.PurchaseReceiptController = erpnext.buying.BuyingController.extend
 				cur_frm.add_custom_button(__('Make Purchase Invoice'), this.make_purchase_invoice,
 					frappe.boot.doctype_icons["Purchase Invoice"]);
 			}
-			cur_frm.add_custom_button('Send SMS', cur_frm.cscript.send_sms, "icon-mobile-phone", true);
+			cur_frm.add_custom_button(__('Send SMS'), cur_frm.cscript.send_sms, "icon-mobile-phone", true);
 
 			this.show_stock_ledger();
 			this.show_general_ledger();
