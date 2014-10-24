@@ -3,7 +3,7 @@
 		<div class="text-ellipsis">
 			{%= list.get_avatar_and_id(doc) %}
 			<span style="margin-right: 8px; display: inline-block"
-				title="{%= doc.material_request_type %}" class="filterable"
+				title="{%=  __(doc.material_request_type) %}" class="filterable"
 				data-filter="material_request_type,=,{%= doc.material_request_type %}">
 			{% if(doc.material_request_type==="Purchase") { %}
 				<i class="icon-shopping-cart"></i>
