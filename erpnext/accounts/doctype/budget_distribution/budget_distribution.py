@@ -9,8 +9,8 @@ from frappe.model.document import Document
 
 class BudgetDistribution(Document):
 	def get_months(self):
-		month_list = ['January','February','March','April','May','June','July','August','September',
-		'October','November','December']
+		month_list = [_('January'),_('February'),_('March'),_('April'),_('May'),_('June'),_('July'),_('August'),_('September'),
+		_('October'),_('November'),_('December')]
 		idx =1
 		for m in month_list:
 			mnth = self.append('budget_distribution_details')
