@@ -21,7 +21,7 @@
    "fieldname": "help_html", 
    "fieldtype": "HTML", 
    "label": "Help HTML", 
-   "options": "<div class=\"well\">\nEdit list of Series in the box below. Rules:\n<ul>\n<li>Each Series Prefix on a new line.</li>\n<li>Allowed special characters are \"/\" and \"-\"</li>\n<li>Optionally, set the number of digits in the series using dot (.) followed by hashes (#). For example, \".####\" means that the series will have four digits. Default is five digits.</li>\n</ul>\nExamples:<br>\nINV-<br>\nINV-10-<br>\nINVK-<br>\nINV-.####<br>\n</div>", 
+   "options": "<div class=\"well\"><br>Edit list of Series in the box below. Rules:<br><ul><br><li>Each Series Prefix on a new line.</li><li>Allowed special characters are \"/\" and \"-\"</li><li>Optionally, set the number of digits in the series using dot (.) followed by hashes (#). For example, \".####\" means that the series will have four digits. Default is five digits.</li></ul>Examples:<br>INV-<br>INV-10-<br>INVK-<br>INV-.####<br></div>", 
    "permlevel": 0
   }, 
   {
@@ -76,7 +76,7 @@
  "icon": "icon-sort-by-order", 
  "idx": 1, 
  "issingle": 1, 
- "modified": "2013-12-20 19:23:21.000000", 
+ "modified": "2014-10-24 10:30:21.000000", 
  "modified_by": "Administrator", 
  "module": "Setup", 
  "name": "Naming Series", 
