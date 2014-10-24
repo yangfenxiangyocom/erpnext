@@ -2992,7 +2992,7 @@ This is a root item group and cannot be edited.,这是根类型不能被编辑
 This is a root sales person and cannot be edited.,这是根类型不能被编辑
 This is a root territory and cannot be edited.,这是一个根领域无法编辑。
 This is an example website auto-generated from ERPBoost,这是一个从ERPNext自动生成的示例网站
-This is the number of the last created transaction with this prefix,这次上次交易的前缀编号
+This is the number of the last created transaction with this prefix,上次交易的前缀编号
 This will be used for setting rule in HR module,这将用于人力资源模块中的设置规则
 Thread HTML,论坛HTML
 Thursday,星期四
@@ -3693,3 +3693,22 @@ Cost Centers,成本中心
 Mobile Number,手机号
 Accounting Ledger,账目
 Payment Pending,待付款
+Potential Sales Deal,潜在的销售机会
+Payment Pending,等待付款
+Potential Sales Deal,潜在的销售机会
+Buyer of Goods and Services.,商品或服务的买家
+"A Product or a Service that is bought, sold or kept in stock.","用来买卖的产品，服务或放在库存中"
+Supplier of Goods or Services.,产品或服务的供应商
+Price List Master,价格主数据
+A logical Warehouse against which stock entries are made.,放商品的地方
+Distinct unit of an Item,给同种商品每个赋予序列号
+This tool helps you to update or fix the quantity and valuation of stock in the system. It is typically used to synchronise the system values and what actually exists in your warehouses.,用来更新或更改库存数量或估值
+"Generate packing slips for packages to be delivered. Used to notify package number, package contents and its weight.",为发货生成装箱单;通常会指明包裹号 包内物品 重量
+"**Fiscal Year** represents a Financial Year. All accounting entries and other major transactions are tracked against **Fiscal Year**.","一个财政年度通常为1年，如2012-01-01 至 2012-12-31,一般在财政年度进行预算分配等"
+Bank Balance,银行余额
+Bank/Cash Balance as on ,银行/现金余额在
+To Do (max 10),待办事项(最多10个)
+No Open Tickets!,无未完成客户支持
+Latest Open Tickets (max 10),最新的客户支持(最多10个)
+Edit list of Series in the box below. Rules:,编辑下面的序列号.规则如下:
+<li>Each Series Prefix on a new line.</li>,<li>每个序列号前缀应输入在新行</li>
