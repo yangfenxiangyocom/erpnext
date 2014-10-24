@@ -3689,3 +3689,4 @@ Fixed Cycle Cost,固定周期成本
 Against Purchase Order,采购订单
 "Purchase rate for item: {0} not found, which is required to book accounting entry (expense). Please mention item price against a buying price list.","商品 {0}采购价格未找到, 其需要被设置在费用的账户下, 请在价格表中设置商品的采购价格"
 Cost Centers,成本中心
+"Row {0}: Qty not avalable in warehouse {1} on {2} {3}.Available Qty: {4}, Transfer Qty: {5}","行{0}：仓库{1}中没有可用的数量有货数量：{4}，转移数量：{5}, {2} {3}"
