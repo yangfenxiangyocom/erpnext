@@ -670,15 +670,15 @@ Creation Document No,创建档案编号
 Creation Document Type,创建档案类型
 Creation Time,创建时间
 Credentials,证书
-Credit,贷
-Credit Amt,信用额
+Credit,贷方
+Credit Amt,贷方金额
 Credit Card,信用卡
 Credit Card Voucher,信用卡凭证
 Credit Controller,信用控制角色
 Credit Days,信用天数
 Credit Limit,信用额度
-Credit Note,贷项通知单
-Credit To,Credit To
+Credit Note,贷方通知单
+Credit To,贷向
 Currency,货币
 Currency Exchange,货币兑换
 Currency Name,货币名称
@@ -758,11 +758,11 @@ Dates,日期
 Days Since Last Order,天过去了从上次下单至今
 Days for which Holidays are blocked for this department.,假期不能申请休假的日期的部门
 Dealer,经销商(商家)
-Debit,借
-Debit Amt,借记额
+Debit,借方
+Debit Amt,借方金额
 Debit Note,借项通知单
-Debit To,借记给
-Debit and Credit not equal for this voucher. Difference is {0}.,这个凭证的借记和贷记不相等;不同的是{0}
+Debit To,借向
+Debit and Credit not equal for this voucher. Difference is {0}.,这个凭证的借方和贷方不相等;不同的是{0}
 Deduct,减少
 Deduction,扣除
 Deduction Type,扣除类型
@@ -785,7 +785,7 @@ Default Expense Account,默认支出账户
 Default Income Account,默认收入账户
 Default Item Group,默认商品组
 Default Price List,默认价目表
-Default Purchase Account in which cost of the item will be debited.,该商品的成本将从默认购买帐户中被扣除
+Default Purchase Account in which cost of the item will be debited.,该商品的成本将从默认购买帐户中记入借方
 Default Selling Cost Center,默认销售成本中心
 Default Settings,默认设置
 Default Source Warehouse,默认源仓库
@@ -1610,7 +1610,7 @@ Make ,使用/创建
 Make Accounting Entry For Every Stock Movement,每次库存转移都进行财务记录
 Make Bank Voucher,创建银行凭证
 Make Credit Note,创建贷方凭证(应付款通知单)
-Make Debit Note,创建借记通知单
+Make Debit Note,创建借记凭证(通知单)
 Make Delivery,创建发货单
 Make Difference Entry,创建差异记录
 Make Excise Invoice,创建消费税发票
@@ -2493,8 +2493,8 @@ Row #{0}: Please specify Serial No for Item {1},行#{0}：请注明商品序号{
 						Sales Invoice Debit To account","行{0}：\
 账户与销售发票账户记录不匹配"
 Row {0}: Conversion Factor is mandatory,行{0}：转换系数是强制性的
-Row {0}: Credit entry can not be linked with a Purchase Invoice,行{0}: 借方记录不能链接至采购发票
-Row {0}: Debit entry can not be linked with a Sales Invoice,行{0}: 贷方记录不能链接至销售发票
+Row {0}: Credit entry can not be linked with a Purchase Invoice,行{0}: 贷方记录不能链接至采购发票
+Row {0}: Debit entry can not be linked with a Sales Invoice,行{0}: 借方记录不能链接至销售发票
 Row {0}: Payment amount must be less than or equals to invoice outstanding amount. Please refer Note below.,行{0}：付款金额必须小于或等于发票未付金额。请参考下面的说明。
 Row {0}: Qty is mandatory,行{0}：数量是强制性的
 "Row {0}: Qty not avalable in warehouse {1} on {2} {3}.
@@ -3055,9 +3055,9 @@ Total Characters,总字符
 Total Claimed Amount,总申报额
 Total Commission,总提成
 Total Cost,总成本
-Total Credit,总贷款
-Total Debit,总债务
-Total Debit must be equal to Total Credit. The difference is {0},总借记必须等于总积分。目前相差{0}
+Total Credit,贷方总额
+Total Debit,借方总额
+Total Debit must be equal to Total Credit. The difference is {0},借方总额必须等于贷方总额。目前相差{0}
 Total Deduction,总扣除
 Total Earning,总收入
 Total Experience,经验
@@ -3305,7 +3305,7 @@ You can set Default Bank Account in Company master,您可以在公司基础数�
 You can start by selecting backup frequency and granting access for sync,你可以选择备份频率以及授权同步进而开始使用同步功能
 You can submit this Stock Reconciliation.,您可以提交该库存盘点。
 You can update either Quantity or Valuation Rate or both.,你可以更新数量或估值价格或两者都进行更新
-You cannot credit and debit same account at the same time,您不能在同时间借和贷向同样的账户
+You cannot credit and debit same account at the same time,您不能在同时间借和贷向同一个账户
 You have entered duplicate items. Please rectify and try again.,您输入了重复的产品。请纠正并重试。
 You may need to update: {0},您可能需要更新： {0}
 You must Save the form before proceeding,在继续之前，您必须先保存数据
@@ -3344,7 +3344,7 @@ subject,主题
 to,至
 website page link,网站页面链接
 {0} '{1}' not in Fiscal Year {2},{0}“ {1}”不在财年内{2}
-{0} Credit limit {0} crossed,{0}赊销限额{0}已超过
+{0} Credit limit {0} crossed,{0}信用限额{0}已超过
 {0} Serial Numbers required for Item {0}. Only {0} provided.,{0} 商品{0}的序列号必填. 仅仅 {0} 被提供了.
 {0} budget for Account {1} against Cost Center {2} will exceed by {3},成本中心:{2}; 账户{1}的{0}预算将超出{3}
 {0} can not be negative,{0}不能为负
@@ -3663,8 +3663,8 @@ fiscal_year,财年
 [Primary],[主要的]
 contact,联系人
 Against Journal Voucher {0} is already adjusted against some other voucher,记账凭证{0}已经在其余的记账凭证中进行了调整
-"For {0}, only credit entries can be linked against another debit entry",{0}: 只有借项才能与贷项相关联
-"For {0}, only debit entries can be linked against another credit entry",{0}: 只有贷项才能与借项相关联
+"For {0}, only credit entries can be linked against another debit entry",{0}: 只有贷项才能与借项相关联
+"For {0}, only debit entries can be linked against another credit entry",{0}: 只有借项才能与贷项相关联
 Journal Voucher {0} does not have account {1} or already matched against other voucher,记账凭证{0}并不属于账户{1}或已经与其余的凭证做了配对
 Row {0}: Allocated amount {1} must be less than or equals to JV amount {2},第{0}行: 应付款{1}必须小于或等于分类账金额{2}
 Row {0}: Allocated amount {1} must be less than or equals to invoice outstanding amount {2},第{0}行: 应付款{1}必须小于或等于发票的未付款金额{2}
@@ -3692,8 +3692,6 @@ Cost Centers,成本中心
 "Row {0}: Qty not avalable in warehouse {1} on {2} {3}.Available Qty: {4}, Transfer Qty: {5}","行{0}：仓库{1}中没有可用的数量有货数量：{4}，转移数量：{5}, {2} {3}"
 Mobile Number,手机号
 Accounting Ledger,账目
-Payment Pending,待付款
-Potential Sales Deal,潜在的销售机会
 Payment Pending,等待付款
 Potential Sales Deal,潜在的销售机会
 Buyer of Goods and Services.,商品或服务的买家
