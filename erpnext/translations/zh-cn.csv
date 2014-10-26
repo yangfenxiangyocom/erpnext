@@ -189,7 +189,7 @@ Ageing Based On,账龄日期基于
 Ageing Date is mandatory for opening entry,期初分录的账龄日期是必须的
 Ageing date is mandatory for opening entry,期初分录的账龄日期是必须的
 Agent,代理
-Aging Date,发票日期
+Aging Date,账龄日期
 Aging Date is mandatory for opening entry,期初分录的账龄日期是必须的
 Agriculture,农业
 Airline,航空公司
@@ -3711,3 +3711,7 @@ Latest Open Tickets (max 10),最新的客户支持(最多10个)
 Edit list of Series in the box below. Rules:,编辑下面的序列号.规则如下:
 <li>Each Series Prefix on a new line.</li>,<li>每个序列号前缀应输入在新行</li>
 "<div class=""well""><br>Edit list of Series in the box below. Rules:<br><ul><br><li>Each Series Prefix on a new line.</li><li>Allowed special characters are ""/"" and ""-""</li>\n<li>Optionally, set the number of digits in the series using dot (.) followed by hashes (#). For example, "".####"" means that the series will have four digits. Default is five digits.</li></ul>Examples:<br>INV-<br>INV-10-<br>INVK-<br>INV-.####<br></div>","<div class=""well""><br>编辑如下规则. Rules:<br><ul><br><li>Each Series Prefix on a new line.</li><li>Allowed special characters are ""/"" and ""-""</li>\n<li>Optionally, set the number of digits in the series using dot (.) followed by hashes (#). For example, "".####"" means that the series will have four digits. Default is five digits.</li></ul>Examples:<br>INV-<br>INV-10-<br>INVK-<br>INV-.####<br></div>"
+No Remarks,无备注
+Adjustment Accounting Entry for Stock,调整库存账户
+Accounting Entry for Stock,库存账户
+Aging Days,账龄天数

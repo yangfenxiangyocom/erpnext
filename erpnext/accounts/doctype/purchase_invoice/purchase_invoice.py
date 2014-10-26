@@ -336,7 +336,7 @@ class PurchaseInvoice(BuyingController):
 								"account": stock_received_but_not_billed,
 								"against": self.credit_to,
 								"debit": flt(item.item_tax_amount, self.precision("item_tax_amount", item)),
-								"remarks": self.remarks or "Accounting Entry for Stock"
+								"remarks": self.remarks or _("Accounting Entry for Stock")
 							})
 						)
 
@@ -362,7 +362,7 @@ class PurchaseInvoice(BuyingController):
 						"cost_center": cost_center,
 						"against": self.credit_to,
 						"credit": applicable_amount,
-						"remarks": self.remarks or "Accounting Entry for Stock"
+						"remarks": self.remarks or _("Accounting Entry for Stock")
 					})
 				)
 
