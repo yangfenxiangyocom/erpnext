@@ -1308,7 +1308,7 @@ Income Booked,收入入账
 Income Tax,所得税
 Income Year to Date,年初至今的收入
 Income booked for the digest period,消化期的收入入账
-Incoming,进料
+Incoming,进
 Incoming Rate,买入估值(只读)
 Incoming quality inspection.,进料质量检验
 Incorrect number of General Ledger Entries found. You might have selected a wrong Account in the transaction.,总帐条目中找到不正确的数目。你可能在交易中选择了错误的帐户。
@@ -1916,7 +1916,7 @@ Out Qty,输出数量
 Out Value,输出价值
 Out of AMC,维护过期
 Out of Warranty,超出保修期
-Outgoing,出料
+Outgoing,出
 Outstanding Amount,债务总额
 Outstanding for {0} cannot be less than zero ({1}),{0}的债务不能小于0({1})
 Overhead,开销
@@ -3715,3 +3715,4 @@ No Remarks,无备注
 Adjustment Accounting Entry for Stock,调整库存账户
 Accounting Entry for Stock,库存账户
 Aging Days,账龄天数
+Account {0} does not exists,账户{0}不存在
