@@ -228,7 +228,7 @@ erpnext.FinancialAnalytics = erpnext.AccountTreeGrid.extend({
 			var net_profit = {
 				company: me.company,
 				id: "Net Profit / Loss",
-				name: "Net Profit / Loss",
+				name: __("Net Profit / Loss"),
 				indent: 0,
 				opening: 0,
 				checked: false,
