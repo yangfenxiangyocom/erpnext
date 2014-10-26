@@ -51,7 +51,7 @@ class StockController(AccountsController):
 							"account": warehouse_account[sle.warehouse],
 							"against": detail.expense_account,
 							"cost_center": detail.cost_center,
-							"remarks": self.get("remarks") or "Accounting Entry for Stock",
+							"remarks": self.get("remarks") or _("Accounting Entry for Stock"),
 							"debit": flt(sle.stock_value_difference, 2)
 						}))
 
@@ -60,7 +60,7 @@ class StockController(AccountsController):
 							"account": detail.expense_account,
 							"against": warehouse_account[sle.warehouse],
 							"cost_center": detail.cost_center,
-							"remarks": self.get("remarks") or "Accounting Entry for Stock",
+							"remarks": self.get("remarks") or _("Accounting Entry for Stock"),
 							"credit": flt(sle.stock_value_difference, 2)
 						}))
 					elif sle.warehouse not in warehouse_with_no_account:
@@ -143,7 +143,7 @@ class StockController(AccountsController):
 						"account": account,
 						"against": stock_adjustment_account,
 						"debit": diff,
-						"remarks": "Adjustment Accounting Entry for Stock",
+						"remarks": _("Adjustment Accounting Entry for Stock"),
 					}),
 
 					# account against stock in hand
@@ -152,7 +152,7 @@ class StockController(AccountsController):
 						"against": account,
 						"credit": diff,
 						"cost_center": cost_center or None,
-						"remarks": "Adjustment Accounting Entry for Stock",
+						"remarks": _("Adjustment Accounting Entry for Stock"),
 					}),
 				])
 

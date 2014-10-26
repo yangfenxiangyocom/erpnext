@@ -19,12 +19,13 @@ class AccountsReceivableReport(object):
 		return self.get_columns(customer_naming_by), self.get_data(customer_naming_by)
 		
 	def get_columns(self, customer_naming_by):
+		#_("Voucher Type")
 		columns = [
 			_("Posting Date") + ":Date:80", _("Account") + ":Link/Account:150",
-			_("Voucher Type") + "::110", _("Voucher No") + ":Dynamic Link/Voucher Type:120",
+			_("Voucher Type")+"::110", _("Voucher No") + ":Dynamic Link/" + _("Voucher Type") + ":120",
 			_("Due Date") + ":Date:80",  
 			_("Invoiced Amount") + ":Currency:100", _("Payment Received") + ":Currency:100", 
-			_("Outstanding Amount") + ":Currency:100", _("Age") + ":Int:50", "0-30:Currency:100",
+			_("Outstanding Amount") + ":Currency:100", _("Aging Days") + ":Int:50", "0-30:Currency:100",
 			"30-60:Currency:100", "60-90:Currency:100", _("90-Above") + ":Currency:100",
 			_("Customer") + ":Link/Customer:200"
 		]
