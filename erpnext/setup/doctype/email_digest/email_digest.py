@@ -28,6 +28,7 @@ content_sequence = [
 
 user_specific_content = ["calendar_events", "todo_list"]
 
+frappe.local.lang = 'zh-cn'
 digest_template = """<style>p.ed-indent { margin-right: 17px; }</style>
 <h2>%(name)s</h2>
 <h4>%(company)s</h4>
@@ -71,6 +72,7 @@ class EmailDigest(Document):
 		frappe.response['user_list'] = user_list
 
 	def send(self):
+		frappe.local.lang = 'zh-cn'
 		# send email only to enabled users
 		valid_users = [p[0] for p in frappe.db.sql("""select name from `tabUser`
 			where enabled=1""")]
