@@ -3023,7 +3023,7 @@ To Package No.,结束包装号
 To Produce,待生产
 To Time,结束时间
 To Value,结束值
-To Warehouse,To Warehouse
+To Warehouse,至仓库
 "To add child nodes, explore tree and click on the node under which you want to add more nodes.",点击某个节点然后点击添加子项来添加子节点
 "To assign this issue, use the ""Assign"" button in the sidebar.",分配该问题可以使用侧边栏的“分配”按钮。
 To create a Bank Account,创建一个银行帐号
@@ -3049,7 +3049,7 @@ Total ({0}),总计({0})
 Total Advance,总预付款
 Total Amount,总金额
 Total Amount To Pay,支付总计
-Total Amount in Words,Total Amount in Words
+Total Amount in Words,总计文字描述
 Total Billing This Year: ,今年总账单
 Total Characters,总字符
 Total Claimed Amount,总申报额
