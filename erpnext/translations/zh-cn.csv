@@ -810,7 +810,7 @@ Delete,删除
 Delete {0} {1}?,删除{0} {1}?
 Delivered,已交付
 Delivered Items To Be Billed,交付的项目结算
-Delivered Qty,交付数量
+Delivered Qty,已交付数量
 Delivered Serial No {0} cannot be deleted,交付编号{0}无法删除
 Delivery Date,交货日期
 Delivery Details,交付细节
@@ -2286,12 +2286,12 @@ Purpose must be one of {0},目的必须是{0}中的一个
 QA Inspection,质检
 Qty,数量
 Qty Consumed Per Unit,每单位消耗的数量
-Qty To Manufacture,生产数量
+Qty To Manufacture,应生产数量
 Qty as per Stock UOM,数量（仓库计量单位）
-Qty to Deliver,交付数量
-Qty to Order,订单数量
-Qty to Receive,接收数量
-Qty to Transfer,转移数量
+Qty to Deliver,应交付数量
+Qty to Order,应下单数量
+Qty to Receive,应接收数量
+Qty to Transfer,应转移数量
 Qualification,资格
 Quality,质量
 Quality Inspection,质量检查
@@ -2431,7 +2431,7 @@ Report Type is mandatory,报表（告）类型是强制性的
 Reports to,报告给（上级）
 Reqd By Date,需要的日期
 Reqd by Date,需要的日期
-Request Type,请求类型
+Request Type,需求类型
 Request for Information,需要信息
 Request for purchase.,所需物料采购。
 Requested,要求

@@ -3,6 +3,79 @@
 
 frappe.provide("erpnext.item");
 
+cur_frm.cscript.onload = function(doc, cdt, cdn){
+	var me = this;
+
+	if(doc.__islocal){
+
+		//set expense account
+		this.frm.call({
+			type: "GET",
+	  		method:'frappe.widgets.search.search_link',
+	  		args:{
+					'txt': '',
+					'doctype': "Account",
+					"filters": {
+							"report_type": "Profit and Loss",
+							"group_or_ledger": "Ledger",
+							'account_type': "Expense Account"
+					}
+				},
+			callback: function(r) {
+				if (!r.exc) {
+					if(r.results.length > 0)
+						me.frm.set_value("expense_account", r.results[0].value);
+				}
+			}
+		});
+
+		//set income account
+		this.frm.call({
+			type: "GET",
+	  		method:'frappe.widgets.search.search_link',
+	  		args:{
+					'txt': '',
+					'doctype': "Account",
+					"filters": {
+							"report_type": "Profit and Loss",
+							"group_or_ledger": "Ledger",
+							'account_type': "Income Account"
+					}
+				},
+			callback: function(r) {
+				if (!r.exc) {
+					if(r.results.length > 0)
+						me.frm.set_value("income_account", r.results[0].value);
+				}
+			}
+		});
+
+		//set cost center
+		this.frm.call({
+			type: "GET",
+	  		method:'frappe.widgets.search.search_link',
+	  		args:{
+					'txt': '',
+					'doctype': "Cost Center",
+					"filters": {
+							"group_or_ledger": "Ledger"
+					}
+				},
+			callback: function(r) {
+				if (!r.exc) {
+					if(r.results.length > 0){
+						me.frm.set_value("buying_cost_center", r.results[0].value);
+						me.frm.set_value("selling_cost_center", r.results[0].value);
+					}
+				}
+			}
+		});
+
+	}
+
+
+}
+
 cur_frm.cscript.refresh = function(doc) {
 	// make sensitive fields(has_serial_no, is_stock_item, valuation_method)
 	// read only if any stock ledger entry exists
@@ -75,7 +148,8 @@ cur_frm.fields_dict['expense_account'].get_query = function(doc) {
 	return {
 		filters: {
 			"report_type": "Profit and Loss",
-			"group_or_ledger": "Ledger"
+			"group_or_ledger": "Ledger",
+			'account_type': "Expense Account"
 		}
 	}
 }
