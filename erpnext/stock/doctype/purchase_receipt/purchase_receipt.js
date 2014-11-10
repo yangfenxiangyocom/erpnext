@@ -56,6 +56,13 @@ erpnext.stock.PurchaseReceiptController = erpnext.buying.BuyingController.extend
 		if(!(item.received_qty || item.rejected_qty) && item.qty) {
 			item.received_qty = item.qty;
 		}
+		
+		//if it is POS VIEW, then
+		if ((is_null(this.frm.doc.is_pos) && cint(frappe.defaults.get_user_default("is_pos"))===1) || this.frm.doc.is_pos) {
+			if(item.qty > item.received_qty)
+				item.received_qty = item.qty;
+		}
+
 
 		if(item.qty > item.received_qty) {
 			msgprint(__("Error: {0} > {1}", [__(frappe.meta.get_label(item.doctype, "qty", item.name)),
