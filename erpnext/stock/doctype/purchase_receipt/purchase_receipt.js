@@ -57,9 +57,7 @@ erpnext.stock.PurchaseReceiptController = erpnext.buying.BuyingController.extend
 			item.received_qty = item.qty;
 		}
 		
-		//if it is POS VIEW, then
-		if (this.frm.doc.is_pos) {
-			if(item.qty > item.received_qty)
+		if(item.qty > item.received_qty){
 				item.received_qty = item.qty;
 		}
 
