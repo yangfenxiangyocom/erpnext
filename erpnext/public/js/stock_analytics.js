@@ -1,5 +1,6 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
 // License: GNU General Public License v3. See license.txt
+//__("Value"),__("Quatity"),__("Daily"),__("Weekly"),__("Monthly"),__("Quarterly"),__("Yearly")
 
 frappe.require("assets/erpnext/js/stock_grid_report.js");
 

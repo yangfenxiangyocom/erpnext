@@ -1662,8 +1662,8 @@ Master Name is mandatory if account type is Warehouse,如果帐户类型为仓�
 Master Type,基础数据类型
 Masters,基础数据
 Match non-linked Invoices and Payments.,匹配无关联的发票和付款
-Material Issue,物料发放
-Material Receipt,物料收据
+Material Issue,发料
+Material Receipt,收料
 Material Request,物料需求
 Material Request Detail No,物料请求详情编号
 Material Request For Warehouse,物料需求仓库
