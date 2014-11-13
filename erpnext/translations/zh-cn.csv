@@ -1375,8 +1375,8 @@ Is Purchase Item,是采购产品
 Is Sales Item,是销售产品
 Is Service Item,是服务产品
 Is Stock Item,是库存项
-Is Sub Contracted Item,是分包商品
-Is Subcontracted,是分包的
+Is Sub Contracted Item,是委外加工商品
+Is Subcontracted,是委外加工
 Is this Tax included in Basic Rate?,此项税费已包含在产品价格中吗？
 Issue,问题
 Issue Date,报修日期
@@ -1458,9 +1458,9 @@ Item {0} must be Service Item,商品{0}必须是服务型商品
 Item {0} must be a Purchase Item,服务型商品{0}必须是一个可采购商品
 Item {0} must be a Sales Item,商品{0}必须是可销售商品
 Item {0} must be a Service Item.,商品{0}必须是服务型商品
-Item {0} must be a Sub-contracted Item,商品{0}必须是一个分包商品
+Item {0} must be a Sub-contracted Item,商品{0}必须是一个委外加工商品
 Item {0} must be a stock Item,商品{0}必须是一个库存商品
-Item {0} must be manufactured or sub-contracted,商品{0}必须是生产或分包商品
+Item {0} must be manufactured or sub-contracted,商品{0}必须是生产或委外加工商品
 Item {0} not found,商品{0}未找到
 Item {0} with Serial No {1} is already installed,序列号{1}的商品{0}已经安装
 Item {0} with same description entered twice,商品{0}相同的描述已输入两次
@@ -2051,7 +2051,7 @@ Please create Salary Structure for employee {0},请为员工建立薪酬结构{0
 Please create new account from Chart of Accounts.,请为会计科目表创建新帐户
 Please do NOT create Account (Ledgers) for Customers and Suppliers. They are created directly from the Customer / Supplier masters.,请不要为客户和供应商创建账户（分类帐）， 他们被直接创建在客户 / 供应商 基础数据中。
 Please enter 'Expected Delivery Date',请输入预计交付日期
-Please enter 'Is Subcontracted' as Yes or No,请勾选'是分包' 是或者否
+Please enter 'Is Subcontracted' as Yes or No,请勾选'是委外加工' 是或者否
 Please enter 'Repeat on Day of Month' field value,请输入'重复每天月的指定天'字段值
 Please enter Account Receivable/Payable group in company master,请在公司基础数据中输入应收帐款/应付帐款组
 Please enter Approving Role or Approving User,请输入审批角色或审批用户
@@ -2445,7 +2445,7 @@ Required By,需求方
 Required Date,需用日期
 Required Qty,所需数量
 Required only for sample item.,仅对样品商品需要.
-Required raw materials issued to the supplier for producing a sub - contracted item.,需要发到分包商进行生产的原材料
+Required raw materials issued to the supplier for producing a sub - contracted item.,需要发到委外加工商进行生产的原材料
 Research,调查
 Research & Development,研究与发展
 Researcher,研究员
@@ -2611,7 +2611,7 @@ Secured Loans,抵押贷款
 Securities & Commodity Exchanges,证券及商品交易市场
 Securities and Deposits,证券及存款
 "See ""Rate Of Materials Based On"" in Costing Section",参见成本核算部分的“材料价格基于”字段
-"Select ""Yes"" for sub - contracting items","如果是分包商品请选择是"
+"Select ""Yes"" for sub - contracting items","如果是委外加工商品请选择是"
 "Select ""Yes"" if this item is used for some internal purpose in your company.",选择“是”，如果该产品是用于公司内部
 "Select ""Yes"" if this item represents some work like training, designing, consulting etc.",选择“是”，如果该产品代表一些服务类型的工作，例如培训、设计、咨询等服务产品。
 "Select ""Yes"" if you are maintaining stock of this item in your Inventory.",如果您想在库存中维护这个产品的库存请选择“是”
@@ -2866,10 +2866,10 @@ Supplier Type,供应商类型
 Supplier Type / Supplier,供应商类型/供应商
 Supplier Type master.,供应商类型基础数据。
 Supplier Warehouse,供应商仓库
-Supplier Warehouse mandatory for sub-contracted Purchase Receipt,分包合同采购单中的供应商仓库必须指明
+Supplier Warehouse mandatory for sub-contracted Purchase Receipt,委外加工合同采购单中的供应商仓库必须指明
 Supplier database.,供应商数据库。
 Supplier master.,供应商基础数据。
-Supplier warehouse where you have issued raw materials for sub - contracting,原材料需要发给供应商的仓库(分包合同)
+Supplier warehouse where you have issued raw materials for sub - contracting,原材料需要发给供应商的仓库(委外加工合同)
 Supplier-Wise Sales Analytics,供应商层面销售分析
 Support,客户支持
 Support Analtyics,支持分析
@@ -3361,7 +3361,7 @@ website page link,网站页面链接
 {0} is not a valid email id,{0}不是一个有效的电子邮件
 {0} is now the default Fiscal Year. Please refresh your browser for the change to take effect.,{0}现在是默认的财政年度。请刷新您的浏览器，以使更改生效。
 {0} is required,{0}是必需的
-{0} must be a Purchased or Sub-Contracted Item in row {1},{0}必须是已购买或分包产品在行{1}
+{0} must be a Purchased or Sub-Contracted Item in row {1},{0}必须是已购买或委外加工产品在行{1}
 {0} must be reduced by {1} or you should increase overflow tolerance,{0}必须减少{1}或应增加溢出容忍度
 {0} must have role 'Leave Approver',{0}必须具备“请假审批”权限的角色
 {0} valid serial nos for Item {1},{0}对产品有效的序列号{1}
@@ -3553,7 +3553,7 @@ Selling Amount,销售金额
 Employee - Employee Information,员工资料
 Total Actual,实际总值
 Half-Yearly,半年
-FIFO,先进先出法
+FIFO,先进先出
 Select User...,选择用户
 Automatically updated via Stock Entry of type Manufacture or Repack,经由制造或重新打包的库存条目自动更新
 Payment Tool,付款工具
@@ -3580,7 +3580,7 @@ Tel,电话
 delete this,删除
 It is needed to fetch Item Details.,商品详情需要其信息
 Landed Cost Voucher Amount,到岸成本凭证金额
-"Select ""Yes"" for sub - contracting items","如果是分包项目请选择是"
+"Select ""Yes"" for sub - contracting items","如果是委外加工商品请选择是"
 Warehouse where you are maintaining stock of rejected items,被拒绝收货的商品存放的仓库
 Total Variable Cost,总可变成本
 Total Fixed Cost,总固定成本
