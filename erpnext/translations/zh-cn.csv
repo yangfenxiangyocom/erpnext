@@ -766,7 +766,7 @@ Debit and Credit not equal for this voucher. Difference is {0}.,这个凭证的�
 Deduct,减少
 Deduction,扣除
 Deduction Type,扣除类型
-Deduction1,Deduction1
+Deduction1,扣除
 Deductions,扣除
 Default,默认
 Default Account,默认帐户
@@ -908,7 +908,7 @@ Earnest Money,保证金
 Earning,盈利
 Earning & Deduction,收入 & 扣除
 Earning Type,收入类型
-Earning1,Earning1
+Earning1,收入
 Edit,编辑
 Edu. Cess on Excise,Edu. Cess on Excise
 Edu. Cess on Service Tax,Edu. Cess on Service Tax
@@ -1624,7 +1624,7 @@ Make Payment,进行付款
 Make Payment Entry,付款项
 Make Purchase Invoice,创建采购发票
 Make Purchase Order,创建采购订单
-Make Purchase Receipt,创建采购收据
+Make Purchase Receipt,创建收货单
 Make Salary Slip,创建工资单
 Make Salary Structure,创建薪酬结构
 Make Sales Invoice,创建销售发票
@@ -1646,7 +1646,7 @@ Manufactured Qty,生产数量
 Manufactured quantity will be updated in this warehouse,生产数量将更新到此仓库
 Manufactured quantity {0} cannot be greater than planned quanitity {1} in Production Order {2},生产订单{2}的制作的数量{0}不能大于计划的数量{1}
 Manufacturer,生产厂家
-Manufacturer Part Number,制造商零件编号
+Manufacturer Part Number,生产商零件编号
 Manufacturing,生产
 Manufacturing Quantity,生产数量
 Manufacturing Quantity is mandatory,生产数量是必填的
@@ -1744,7 +1744,7 @@ Name of person or organization that this address belongs to.,这个地址从属�
 Name of the Budget Distribution,预算分配的名称
 Naming Series,命名系列
 Negative Quantity is not allowed,负数量是不允许的
-Negative Stock Error ({6}) for Item {0} in Warehouse {1} on {2} {3} in {4} {5},"库存数为负({6}):商品{0}; 在{4} {5}中 仓库: {1}, {2}, {3}"
+Negative Stock Error ({6}) for Item {0} in Warehouse {1} on {2} {3} in {4} {5},"库存数为负({6}):商品{0}; 在{4}, {5}中 仓库: {1}, {2}, {3}"
 Negative Valuation Rate is not allowed,估值率为负是不允许的
 Negative balance in Batch {0} for Item {1} at Warehouse {2} on {3} {4},批次{0}中商品{1}: 仓库 {2} 在 {3} {4}中为负剩余
 Net Pay,净工资
@@ -2795,7 +2795,7 @@ Stock Ageing,库存存放时间分析
 Stock Analytics,库存分析
 Stock Assets,库存资产
 Stock Balance,库存余额
-Stock Entries already created for Production Order,生产订单已创建库存条目
+Stock Entries already created for Production Order ,生产订单已创建库存条目
 Stock Entry,库存条目
 Stock Entry Detail,库存条目细节
 Stock Expenses,库存费用
@@ -3270,8 +3270,8 @@ With period closing Entry,期末结账分录
 Work Details,工作细节
 Work Done,工作完成
 Work In Progress,在制品
-Work-in-Progress Warehouse,半成品仓库
-Work-in-Progress Warehouse is required before Submit,提交前请选择半成品仓库
+Work-in-Progress Warehouse,在制品仓库
+Work-in-Progress Warehouse is required before Submit,提交前请选择在制品仓库
 Working,工作中
 Working Days,工作天数
 Workstation,工厂
@@ -3555,7 +3555,7 @@ Total Actual,实际总值
 Half-Yearly,半年
 FIFO,先进先出
 Select User...,选择用户
-Automatically updated via Stock Entry of type Manufacture or Repack,经由制造或重新打包的库存条目自动更新
+Automatically updated via Stock Entry of type Manufacture or Repack,经由生产或重新打包的库存条目自动更新
 Payment Tool,付款工具
 Advance Paid,预付款
 Item #{0}: Ordered qty can not less than item's minimum order qty (defined in item master).,商品#{0}: 订购的商品不能少于最小订购量(在商品基础数据中进行了设置)
@@ -3676,7 +3676,7 @@ against_voucher_type,凭证类型
 {0} Credit limit {1} crossed,{0}超过了信用限制{1}
 Stock: ,库存数量
 Shown in Website,显示在网站
-Manufactured Item,需制造商品
+Manufactured Item,已生产商品
 Purchase Item,需采购商品
 Sales Item,可销售商品
 Stock Item,库存中商品
@@ -3716,3 +3716,4 @@ Adjustment Accounting Entry for Stock,调整库存账户
 Accounting Entry for Stock,库存账户
 Aging Days,账龄天数
 Account {0} does not exists,账户{0}不存在
+POS Invoice,零售小票
