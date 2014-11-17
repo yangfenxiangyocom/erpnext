@@ -35,7 +35,7 @@
    "no_copy": 1, 
    "oldfieldname": "status", 
    "oldfieldtype": "Select", 
-   "options": "\nOpen\nClosed\nWork In Progress\nCancelled", 
+   "options": "\nOpen\nClosed\nIn Progress\nCancelled", 
    "permlevel": 0, 
    "reqd": 1, 
    "search_index": 1
@@ -396,7 +396,7 @@
  "icon": "icon-bug", 
  "idx": 1, 
  "is_submittable": 0, 
- "modified": "2014-07-07 02:47:56.491906", 
+ "modified": "2014-11-07 02:47:56.491906", 
  "modified_by": "Administrator", 
  "module": "Support", 
  "name": "Customer Issue", 

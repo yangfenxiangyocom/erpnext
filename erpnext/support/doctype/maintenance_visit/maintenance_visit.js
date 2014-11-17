@@ -32,7 +32,7 @@ erpnext.support.MaintenanceVisit = frappe.ui.form.Controller.extend({
 						method: "erpnext.support.doctype.customer_issue.customer_issue.make_maintenance_visit",
 						source_doctype: "Customer Issue",
 						get_query_filters: {
-							status: ["in", "Open, Work in Progress"],
+							status: ["in", "Open,In Progress"],
 							customer: cur_frm.doc.customer || undefined,
 							company: cur_frm.doc.company
 						}
