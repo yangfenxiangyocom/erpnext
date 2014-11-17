@@ -14,14 +14,14 @@ $(document).ready(function() {
 		callback: function(r) {
 			if(r.message && r.message.price) {
 				$(".item-price")
-					.html(r.message.price.formatted_price + " per " + r.message.uom);
+					.html(r.message.price.formatted_price + "/" + r.message.uom);
 				
 				if(r.message.stock==0) {
-					$(".item-stock").html("<div class='help'>Not in stock</div>");
+					$(".item-stock").html("<div class='help'>" + "{{ _('Not in stock') }}" + " </div>");
 				}
 				else if(r.message.stock==1) {
 					$(".item-stock").html("<div style='color: green'>\
-						<i class='icon-check'></i> Available (in stock)</div>");
+						<i class='icon-check'></i> " + "{{ _('Available (in stock)') }}" + " </div>");
 				}
 				
 				$(".item-price-info").toggle(true);

@@ -47,22 +47,25 @@ class website_maker(object):
 		website_settings.brand_html = self.company
 		website_settings.copyright = self.company
 		website_settings.top_bar_items = []
+
 		website_settings.append("top_bar_items", {
 			"doctype": "Top Bar Item",
-			"label":_("Contact"),
-			"url": "contact"
+			"label": _("Products"),
+			"url": "products"
 		})
+
 		website_settings.append("top_bar_items", {
 			"doctype": "Top Bar Item",
 			"label":_("Blog"),
 			"url": "blog"
 		})
 
-		#website_settings.append("top_bar_items", {
-		#	"doctype": "Top Bar Item",
-		#	"label": _("Products"),
-		#	"url": "products"
-		#})
+		website_settings.append("top_bar_items", {
+			"doctype": "Top Bar Item",
+			"label":_("Contact Us"),
+			"url": "contact"
+		})
+
 		website_settings.save()
 
 	def make_blog(self):
@@ -76,9 +79,9 @@ class website_maker(object):
 
 		blog_category = frappe.get_doc({
 			"doctype": "Blog Category",
-			"category_name": "general",
+			"category_name": "Enquiry",
 			"published": 1,
-			"title": _("General")
+			"title": _("Enquiry")
 		}).insert()
 
 		frappe.get_doc({
@@ -96,6 +99,6 @@ def test():
 	frappe.delete_doc("Web Page", "test-company")
 	frappe.delete_doc("Blog Post", "welcome")
 	frappe.delete_doc("Blogger", "administrator")
-	frappe.delete_doc("Blog Category", "general")
+	frappe.delete_doc("Blog Category", "Enquiry")
 	website_maker("Test Company", "Better Tools for Everyone", "Administrator")
 	frappe.db.commit()
