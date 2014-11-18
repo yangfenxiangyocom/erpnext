@@ -60,6 +60,8 @@ def get_address_display(address_dict):
 	if not template:
 		template = frappe.db.get_value("Address Template", \
 			{"is_default": 1}, "template")
+	if not template:
+		template = frappe.db.get_value("Address Template", {"country": 'China'}, "template")
 
 	if not template:
 		frappe.throw(_("No default Address Template found. Please create a new one from Setup > Printing and Branding > Address Template."))

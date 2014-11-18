@@ -1950,7 +1950,7 @@ Packing Slip Item,装箱单信息
 Packing Slip Items,装箱单信息
 Packing Slip(s) cancelled,装箱单已取消
 Page Break,分页符
-Page Name,网页名称
+Page Name,页面标识
 Paid Amount,支付的金额
 Paid amount + Write Off Amount can not be greater than Grand Total,支付的金额+ 抵销金额不能大于总计
 Pair,双
@@ -3717,3 +3717,4 @@ Accounting Entry for Stock,库存账户
 Aging Days,账龄天数
 Account {0} does not exists,账户{0}不存在
 POS Invoice,零售小票
+In Progress,进行中

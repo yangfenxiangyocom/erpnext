@@ -5,7 +5,7 @@ frappe.ready(function() {
 	$('<div class="product-search">\
 			<form class="form-inline form-search">\
 			<div class="input-group">\
-				<input class="form-control" type="text" id="product-search" placeholder="Product Search...">\
+				<input class="form-control" type="text" id="product-search" placeholder=' + '" {{ _("Product Search") }}"' + '...">\
 				<span class="input-group-btn">\
 					<button class="btn btn-default" type="button" id="btn-product-search">\
 						<i class="icon-search"></i></button>\

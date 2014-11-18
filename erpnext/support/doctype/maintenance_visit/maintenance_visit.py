@@ -30,12 +30,12 @@ class MaintenanceVisit(TransactionBase):
 					if self.completion_status == 'Fully Completed':
 						status = 'Closed'
 					elif self.completion_status == 'Partially Completed':
-						status = 'Work In Progress'
+						status = 'In Progress'
 				else:
 					nm = frappe.db.sql("select t1.name, t1.mntc_date, t2.service_person, t2.work_done from `tabMaintenance Visit` t1, `tabMaintenance Visit Purpose` t2 where t2.parent = t1.name and t1.completion_status = 'Partially Completed' and t2.prevdoc_docname = %s and t1.name!=%s and t1.docstatus = 1 order by t1.name desc limit 1", (d.prevdoc_docname, self.name))
 
 					if nm:
-						status = 'Work In Progress'
+						status = 'In Progress'
 						mntc_date = nm and nm[0][1] or ''
 						service_person = nm and nm[0][2] or ''
 						work_done = nm and nm[0][3] or ''
