@@ -65,7 +65,7 @@ frappe.pages['setup-wizard'].onload = function(wrapper) {
 				help: __("Welcome to ERP Boost. Please select your language to begin the Setup Wizard."),
 				onload: function(slide) {
 					slide.get_input("language").on("change", function() {
-						var lang = $(this).val();
+						var lang = $(this).val() || "english";
 						frappe._messages = {};
 						frappe.call({
 							method: "erpnext.setup.page.setup_wizard.setup_wizard.load_messages",
